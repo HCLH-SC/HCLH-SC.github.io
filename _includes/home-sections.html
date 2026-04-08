@@ -18,18 +18,6 @@
 {{ paragraph }}
 
 {% endfor %}
-
-### Topics of interest
-{% for topic in w.topics_of_interest %}
-- {{ topic }}
-{% endfor %}
-
-See **Call for papers** below for submission details.
-
-### Expected outcomes
-{% for outcome in w.expected_outcomes %}
-- {{ outcome }}
-{% endfor %}
 </div>
 {% if w.overview_logo and w.overview_logo.file %}
 <aside class="overview-layout__logo">
@@ -61,13 +49,13 @@ See **Call for papers** below for submission details.
 </table>
 </div>
 
-### Invited speakers / panelists
+## Invited speakers / panelists
 {% if site.data.people.featured_speakers.size > 0 %}
 {% for speaker in site.data.people.featured_speakers %}
 - **{{ speaker.name }}**, {{ speaker.affiliation }}{% if speaker.title %} — {{ speaker.title }}{% endif %}
 {% endfor %}
 {% else %}
-**TBD** — add speakers in `_data/people.yml` under `featured_speakers`.
+**TBD** 
 {% endif %}
 
 ## Call for papers {#call-for-papers}
@@ -87,25 +75,29 @@ See **Call for papers** below for submission details.
 
 {{ site.data.submission.submission_guidelines }}
 
-{% if site.data.submission.portal_url != "" %}
-**Submission:** [{{ site.data.submission.portal_label | default: site.data.submission.portal_url }}]({{ site.data.submission.portal_url }}) — {{ site.data.submission.proceedings_note }}
-{% else %}
-**Submission link** ({{ site.data.submission.proceedings_note }}): *{{ site.data.submission.portal_link_placeholder }}* — replace with the official SC workshop submission URL in `_data/submission.yml` (`portal_url` / `portal_label`).
-{% endif %}
+{% assign sub = site.data.submission %}
+Papers should be submitted electronically at: {% if sub.portal_url != "" %}[{{ sub.portal_label | default: sub.portal_url }}]({{ sub.portal_url }}){% else %}*{{ sub.portal_link_placeholder }}*{% endif %}, {{ sub.workshop_submission_label }}.
+
+{{ sub.proceedings_note }}
 
 {% if site.data.submission.template_url != "" %}
 - **ACM template:** [link]({{ site.data.submission.template_url }})
 {% endif %}
 
-{% if site.data.contact.email != "" %}
-For questions, email **{{ site.data.contact.email }}**.
+{% assign contact_data = site.data.contact %}
+{% if contact_data.contacts and contact_data.contacts.size > 0 %}
+For questions, contact:
+
+{% for c in contact_data.contacts %}
+- **{{ c.name }}** — [{{ c.email }}](mailto:{{ c.email }})
+{% endfor %}
+{% elsif contact_data.email != "" %}
+For questions, email [{{ contact_data.email }}](mailto:{{ contact_data.email }}).
 {% else %}
-For questions, email the organizers (address TBD in `_data/contact.yml`).
+For questions, add contacts under `contacts` in `_data/contact.yml`.
 {% endif %}
 
 ## Important dates {#important-dates}
-
-> Dates may change and will be updated as milestones are finalized.
 
 {% for item in site.data.dates %}
 - **{{ item.label }}:** {{ item.date }}

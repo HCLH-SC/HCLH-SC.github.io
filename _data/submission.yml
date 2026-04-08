@@ -26,10 +26,12 @@ topics:
   - Benchmarking and evaluation methodologies that jointly consider performance, energy efficiency, and numerical fidelity
 
 submission_guidelines: |
-  Authors are invited to submit manuscripts in English structured as technical papers of up to 8 pages, with a minimum of 5 pages, in 2-column format (U.S. letter, 8.5" × 11"), excluding references, using the ACM proceedings template. Submissions are single-blind. Papers not conforming to these guidelines may be returned without review.
+  Authors are invited to submit manuscripts in English structured as technical papers of up to 8 pages, with a minimum of 5 pages, in 2-column format (U.S. letter, 8.5" × 11"), excluding references, using IEEE proceedings template. Submissions are double-blind. Papers not conforming to these guidelines may be returned without review.
 
   All manuscripts will be peer reviewed and evaluated on correctness, originality, technical strength, significance, clarity of presentation, and relevance to the workshop. Submitted papers must represent original unpublished work that is not currently under review for another conference or journal. At least one author of each accepted paper must register for and attend the workshop.
 
-proceedings_note: Accepted papers will appear in the SC26 Workshops Proceedings.
+# Shown after submission_guidelines: sentence with link, workshop name, then proceedings line.
+workshop_submission_label: "SC26 Workshop: HCLH'26: High-Accuracy Computing on Low-Precision Hardware"
+proceedings_note: "The final papers will be published in the SC Workshops Proceedings."
 
-portal_link_placeholder: "SC submission site link here"
+portal_link_placeholder: "submission link (add portal_url in this file when available)"

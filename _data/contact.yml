@@ -1,4 +1,12 @@
+# People to reach for workshop questions (shown at the end of Call for papers).
+# Add or remove entries; each needs `name` and `email`.
+contacts:
+  - name: Reet Barik
+    email: rbarik@anl.gov
+  - name: Aditya Kashi
+    email: kashia@ornl.gov
+
+# Optional: single fallback if you prefer one line elsewhere (unused when `contacts` is non-empty).
 email: ""
+
 sponsorship_email: ""
-notes:
-  - We will post updates here as the proposal and approval process progresses.
