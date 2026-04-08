@@ -1,16 +1,14 @@
 {% assign w = site.data.workshop %}
 {% assign accepted = site.data["accepted-papers"] %}
-
-<section id="overview" class="home-section" tabindex="-1" markdown="1">
 {% if w.banner and w.banner.file %}
 <div class="site-banner-bleed">
 <figure class="site-banner">
   <img src="{{ w.banner.file | relative_url }}" alt="{{ w.banner.alt | default: w.full_title }}" width="2032" height="528" loading="eager" decoding="async">
 </figure>
 </div>
-{% endif %}
 
-# {{ w.full_title }} ({{ w.short_name }})
+{% endif %}
+# {{ w.full_title }} ({{ w.short_name }}) {#overview}
 
 {% if w.tagline %}
 *{{ w.tagline }}*
@@ -47,10 +45,8 @@ See **Call for papers** below for submission details.
 {% for outcome in w.expected_outcomes %}
 - {{ outcome }}
 {% endfor %}
-</section>
 
-<section id="program" class="home-section" tabindex="-1" markdown="1">
-## Program
+## Program {#program}
 
 {{ site.data.program.intro }}
 
@@ -70,10 +66,8 @@ See **Call for papers** below for submission details.
 {% else %}
 **TBD** — add speakers in `_data/people.yml` under `featured_speakers`.
 {% endif %}
-</section>
 
-<section id="call-for-papers" class="home-section" tabindex="-1" markdown="1">
-## Call for papers
+## Call for papers {#call-for-papers}
 
 {% for line in site.data.submission.instructions %}
 {{ line }}
@@ -112,20 +106,16 @@ Submissions may include (but are not limited to):
 - **Review model:** {{ site.data.submission.review_model | default: "TBD" }}
 
 For questions, use the **Contact** section at the bottom of this page.
-</section>
 
-<section id="important-dates" class="home-section" tabindex="-1" markdown="1">
-## Important dates
+## Important dates {#important-dates}
 
 > Dates may change and will be updated as milestones are finalized.
 
 {% for item in site.data.dates %}
 - **{{ item.label }}:** {{ item.date }}
 {% endfor %}
-</section>
 
-<section id="committees" class="home-section" tabindex="-1" markdown="1">
-## Committees
+## Committees {#committees}
 
 ### Organizing committee
 {% for person in site.data.people.organizers %}
@@ -140,10 +130,8 @@ For questions, use the **Contact** section at the bottom of this page.
 {% else %}
 **TBD** — add members as a list under `program_committee` in `_data/people.yml`.
 {% endif %}
-</section>
 
-<section id="accepted-papers" class="home-section" tabindex="-1" markdown="1">
-## Accepted papers
+## Accepted papers {#accepted-papers}
 
 {% if accepted.papers.size > 0 %}
 {% for paper in accepted.papers %}
@@ -154,10 +142,8 @@ For questions, use the **Contact** section at the bottom of this page.
 {% else %}
 **TBD** — will be posted after notifications. Add entries under `papers` in `_data/accepted-papers.yml`.
 {% endif %}
-</section>
 
-<section id="contact" class="home-section" tabindex="-1" markdown="1">
-## Contact
+## Contact {#contact}
 
 For questions about the workshop, submissions, or sponsorship:
 
@@ -175,4 +161,3 @@ For questions about the workshop, submissions, or sponsorship:
 {% for note in site.data.contact.notes %}
 - {{ note }}
 {% endfor %}
-</section>
