@@ -1,49 +1,31 @@
 short_name: HCLH
 full_title: High-Accuracy Computing on Low-Precision Hardware
-tagline: To be held in conjunction with SC 26: The International Conference for High Performance Computing, Networking, Storage and Analysis located in Chicago, IL on November 15 - 20.
+tagline: "To be held in conjunction with SC 26: The International Conference for High Performance Computing, Networking, Storage and Analysis located in Chicago, IL on November 15 - 20."
 banner:
   file: /assets/images/HCLH_Banner.png
   alt: Banner for the HCLH workshop at SC
-status_label: []
+status_label: "Proposal in progress"
 sc_event:
-  name: SC '26
+  name: "SC '26"
   location: TBD
   date: TBD
-# Optional extra paragraphs under “Overview” (shown before `overview`). Use [] when empty.
+# Optional extra paragraphs under “Workshop Overview” (shown before `overview`). Use [] when empty.
 overview_extra: []
 overview:
-  - This workshop aims to bring together researchers, application
-scientists, system developers, and industry partners to explore
-algorithmic and implementation approaches enabling accurate
-scientific computing on \emph{low-precision
-hardware}. As accelerators increasingly favor reduced-precision
-arithmetic for performance and energy efficiency, many
-scientific applications continue to require \emph{accuracy,
-stability, and reproducibility}. Addressing this widening gap demands
-community-driven advances across algorithms and scientific software,
-spanning domain-informed and cross-cutting approaches while
-building toward reusable, precision-aware libraries and tooling
-infrastructure.
-  - The workshop will feature invited talks and solicited works 
-highlighting mixed-precision methods, error-aware and adaptive numerical
-algorithms, floating-point emulation libraries, and practical deployment 
-on large-scale systems. The workshop emphasizes building community-driven
-software ecosystems for broad adoption across domains, reducing
-duplication, and accelerating impact. By fostering discussion among application developers,
-numerical experts, and hardware vendors, the workshop will establish best 
-practices, share lessons, and strengthen academia–industry collaboration 
-to make low-precision hardware a reliable component of scientific
-workflows.
-# topics_of_interest:
-#   - Mixed-precision methods with reliability safeguards
-#   - Precision-adaptive and selective refinement strategies
-#   - Precision-extension techniques (e.g., FP64 emulation) and alternative number formats (e.g., posits)
-#   - Analyses and tooling for numerical sensitivity characterization (kernels to full applications)
-#   - Frameworks for reasoning about stability, conditioning, and error propagation
-#   - Compiler/runtime/library support for precision-aware execution and automated precision selection
-#   - Application case studies: fidelity vs. performance vs. energy
-# expected_outcomes:
-#   - Peer-reviewed archival publications in the SC workshop proceedings
-#   - Publicly archived talks, presentations, and panel summaries
-#   - An initial community-curated inventory of numerically sensitive kernels/applications and evaluation practices
-#   - A short synthesis of open challenges and research directions
+  - |
+    This workshop aims to bring together researchers, application scientists, system developers, and industry partners to explore algorithmic and implementation approaches enabling accurate scientific computing on *low-precision hardware*. As accelerators increasingly favor reduced-precision arithmetic for performance and energy efficiency, many scientific applications continue to require *accuracy, stability, and reproducibility*. Addressing this widening gap demands community-driven advances across algorithms and scientific software, spanning domain-informed and cross-cutting approaches while building toward reusable, precision-aware libraries and tooling infrastructure.
+  - |
+    The workshop will feature invited talks and solicited works highlighting mixed-precision methods, error-aware and adaptive numerical algorithms, floating-point emulation libraries, and practical deployment on large-scale systems. The workshop emphasizes building community-driven software ecosystems for broad adoption across domains, reducing duplication, and accelerating impact. By fostering discussion among application developers, numerical experts, and hardware vendors, the workshop will establish best practices, share lessons, and strengthen academia–industry collaboration to make low-precision hardware a reliable component of scientific workflows.
+topics_of_interest:
+  - Mixed-precision methods with reliability safeguards
+  - Precision-adaptive and selective refinement strategies
+  - Precision-extension techniques (e.g., FP64 emulation) and alternative number formats (e.g., posits)
+  - Analyses and tooling for numerical sensitivity characterization (kernels to full applications)
+  - Frameworks for reasoning about stability, conditioning, and error propagation
+  - Compiler/runtime/library support for precision-aware execution and automated precision selection
+  - Application case studies: fidelity vs. performance vs. energy
+expected_outcomes:
+  - Peer-reviewed archival publications in the SC workshop proceedings
+  - Publicly archived talks, presentations, and panel summaries
+  - An initial community-curated inventory of numerically sensitive kernels/applications and evaluation practices
+  - A short synthesis of open challenges and research directions
