@@ -1,11 +1,13 @@
 {% assign w = site.data.workshop %}
 {% assign accepted = site.data["accepted-papers"] %}
 
-<section id="overview" class="home-section" tabindex="-1">
+<section id="overview" class="home-section" tabindex="-1" markdown="1">
 {% if w.banner and w.banner.file %}
+<div class="site-banner-bleed">
 <figure class="site-banner">
   <img src="{{ w.banner.file | relative_url }}" alt="{{ w.banner.alt | default: w.full_title }}" width="2032" height="528" loading="eager" decoding="async">
 </figure>
+</div>
 {% endif %}
 
 # {{ w.full_title }} ({{ w.short_name }})
@@ -47,7 +49,7 @@ See **Call for papers** below for submission details.
 {% endfor %}
 </section>
 
-<section id="program" class="home-section" tabindex="-1">
+<section id="program" class="home-section" tabindex="-1" markdown="1">
 ## Program
 
 {{ site.data.program.intro }}
@@ -70,7 +72,7 @@ See **Call for papers** below for submission details.
 {% endif %}
 </section>
 
-<section id="call-for-papers" class="home-section" tabindex="-1">
+<section id="call-for-papers" class="home-section" tabindex="-1" markdown="1">
 ## Call for papers
 
 {% for line in site.data.submission.instructions %}
@@ -112,7 +114,7 @@ Submissions may include (but are not limited to):
 For questions, use the **Contact** section at the bottom of this page.
 </section>
 
-<section id="important-dates" class="home-section" tabindex="-1">
+<section id="important-dates" class="home-section" tabindex="-1" markdown="1">
 ## Important dates
 
 > Dates may change and will be updated as milestones are finalized.
@@ -122,7 +124,7 @@ For questions, use the **Contact** section at the bottom of this page.
 {% endfor %}
 </section>
 
-<section id="committees" class="home-section" tabindex="-1">
+<section id="committees" class="home-section" tabindex="-1" markdown="1">
 ## Committees
 
 ### Organizing committee
@@ -140,7 +142,7 @@ For questions, use the **Contact** section at the bottom of this page.
 {% endif %}
 </section>
 
-<section id="accepted-papers" class="home-section" tabindex="-1">
+<section id="accepted-papers" class="home-section" tabindex="-1" markdown="1">
 ## Accepted papers
 
 {% if accepted.papers.size > 0 %}
@@ -154,7 +156,7 @@ For questions, use the **Contact** section at the bottom of this page.
 {% endif %}
 </section>
 
-<section id="contact" class="home-section" tabindex="-1">
+<section id="contact" class="home-section" tabindex="-1" markdown="1">
 ## Contact
 
 For questions about the workshop, submissions, or sponsorship:
