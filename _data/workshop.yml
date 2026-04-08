@@ -1,0 +1,29 @@
+short_name: HCLH
+full_title: High-Accuracy Computing on Low-Precision Hardware
+tagline: Precision-aware scientific computing on modern low-precision hardware.
+banner:
+  file: /assets/images/HCLH_Banner.png
+  alt: Banner for the HCLH workshop at SC
+status_label: Proposal in progress
+sc_event:
+  name: SC '26
+  location: TBD
+  date: TBD
+# Optional extra paragraphs under “Overview” (shown before `overview`). Use [] when empty.
+overview_extra: []
+overview:
+  - This workshop brings together researchers, application scientists, system and library developers, and industry partners to explore approaches that enable high-precision scientific computing to effectively leverage low-precision hardware.
+  - Modern accelerators increasingly favor reduced-precision arithmetic (e.g., FP16/BF16/TF32/FP8) for performance and energy efficiency, while many scientific workloads still require numerical accuracy, stability, and reproducibility.
+topics_of_interest:
+  - Mixed-precision methods with reliability safeguards
+  - Precision-adaptive and selective refinement strategies
+  - Precision-extension techniques (e.g., FP64 emulation) and alternative number formats (e.g., posits)
+  - Analyses and tooling for numerical sensitivity characterization (kernels to full applications)
+  - Frameworks for reasoning about stability, conditioning, and error propagation
+  - Compiler/runtime/library support for precision-aware execution and automated precision selection
+  - Application case studies: fidelity vs. performance vs. energy
+expected_outcomes:
+  - Peer-reviewed archival publications in the SC workshop proceedings
+  - Publicly archived talks, presentations, and panel summaries
+  - An initial community-curated inventory of numerically sensitive kernels/applications and evaluation practices
+  - A short synthesis of open challenges and research directions

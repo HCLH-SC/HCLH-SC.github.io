@@ -1,0 +1,19 @@
+intro: The workshop will feature invited talks, peer-reviewed paper presentations, and a panel discussion.
+note: This is a tentative half-day schedule (subject to change).
+schedule:
+  - time: 09:00 – 09:10
+    session: Welcome and Introductory Remarks (Organizing Committee)
+  - time: 09:10 – 09:45
+    session: Invited Talk I
+  - time: 09:45 – 10:15
+    session: Accepted Paper Session I (2 papers; 10 min + 3 min Q/A each)
+  - time: 10:15 – 10:30
+    session: Break
+  - time: 10:30 – 11:05
+    session: Invited Talk II
+  - time: 11:05 – 11:45
+    session: Accepted Paper Session II (3 papers; 10 min + 3 min Q/A each)
+  - time: 11:45 – 12:15
+    session: Panel Discussion
+  - time: 12:15 – 12:30
+    session: Concluding Remarks and Open Discussion

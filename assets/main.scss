@@ -1,0 +1,30 @@
+---
+---
+
+@import "minima";
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.workshop-home .home-section {
+  scroll-margin-top: 1.25rem;
+}
+
+.site-header .external-mark {
+  font-size: 0.85em;
+  opacity: 0.75;
+}
+
+.site-banner {
+  margin: 0 0 1.25rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+}

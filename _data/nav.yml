@@ -1,0 +1,14 @@
+# Top navigation: internal items use `id` matching section ids on the home page.
+items:
+  - label: Home
+    id: overview
+  - label: Venue
+    external: "https://sc26.supercomputing.org/attendees/convention-center/"
+  - label: Program
+    id: program
+  - label: Call for papers
+    id: call-for-papers
+  - label: Important dates
+    id: important-dates
+  - label: Committees
+    id: committees

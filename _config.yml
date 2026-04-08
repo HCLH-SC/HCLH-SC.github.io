@@ -2,14 +2,7 @@ title: "High-Accuracy Computing on Low-Precision Hardware (HCLH)"
 description: "SC Workshop: precision-aware scientific computing on modern low-precision hardware"
 theme: minima
 
-# Top navigation (tabs)
-header_pages:
-  - call-for-papers.md
-  - important-dates.md
-  - program.md
-  - accepted-papers.md
-  - organizers.md
-  - contact.md
+# Main navigation is defined in _data/nav.yml (single-page anchors + external Venue).
 
 # Optional: show downloads (e.g., proposal PDF) on the homepage via custom links
 minima:

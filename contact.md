@@ -1,13 +1,4 @@
 ---
-layout: page
-title: Contact
+layout: redirect
+redirect_anchor: contact
 ---
-
-# Contact
-
-For questions about the workshop, submissions, or sponsorship:
-
-- Email: **TBD**
-
-## Updates
-We will post updates here as the proposal and approval process progresses.

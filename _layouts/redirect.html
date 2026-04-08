@@ -1,0 +1,21 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% assign home = '/' | relative_url %}
+  {% assign hash = page.redirect_anchor | prepend: '#' %}
+  {% assign target = home | append: hash %}
+  <meta http-equiv="refresh" content="0; url={{ target }}">
+  <link rel="canonical" href="{{ '/' | absolute_url }}{{ hash }}">
+  <title>Redirecting…</title>
+  <script>
+    location.replace({{ target | jsonify }});
+  </script>
+</head>
+<body>
+  <p><a href="{{ target }}">Continue to the workshop home page.</a></p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+portal_url: ""
+portal_label: ""
+template_url: ""
+page_limit: ""
+review_model: single-blind
+instructions:
+  - HCLH solicits contributions on methods, tools, and experiences that enable accurate, stable, and reproducible scientific computing on increasingly low-precision hardware.
+  - Submission details will be finalized once workshop approval and conference submission setup are complete.
+topics:
+  - Techniques, analyses, and tooling for characterizing numerical sensitivity in scientific workloads (kernels, solver pipelines, full simulations)
+  - Frameworks for reasoning about numerical stability, conditioning, and error propagation
+  - Mixed-precision algorithms, reliability safeguards, and precision-adaptive methodologies beyond dense linear algebra
+  - Precision-extension approaches (e.g., FP64 emulation) for general-purpose scalar arithmetic
+  - Alternative number formats (e.g., posits, unum-inspired representations) in HPC workflows
+  - Compiler, runtime, and library support for precision-aware execution and automated precision selection
+  - Application experiences and case studies: numerical fidelity vs. performance/energy

@@ -1,0 +1,176 @@
+{% assign w = site.data.workshop %}
+{% assign accepted = site.data["accepted-papers"] %}
+
+<section id="overview" class="home-section" tabindex="-1">
+{% if w.banner and w.banner.file %}
+<figure class="site-banner">
+  <img src="{{ w.banner.file | relative_url }}" alt="{{ w.banner.alt | default: w.full_title }}" width="2032" height="528" loading="eager" decoding="async">
+</figure>
+{% endif %}
+
+# {{ w.full_title }} ({{ w.short_name }})
+
+{% if w.tagline %}
+*{{ w.tagline }}*
+{% endif %}
+
+**Workshop at {{ w.sc_event.name }} ({{ w.status_label }}).**
+
+## Overview
+{% if w.overview_extra and w.overview_extra.size > 0 %}
+{% for paragraph in w.overview_extra %}
+{{ paragraph }}
+
+{% endfor %}
+{% endif %}
+{% for paragraph in w.overview %}
+{{ paragraph }}
+
+{% endfor %}
+
+{% if w.sc_event.location != "" or w.sc_event.date != "" %}
+### Venue and timing
+- **Location:** {{ w.sc_event.location | default: "TBD" }}
+- **Date:** {{ w.sc_event.date | default: "TBD" }}
+{% endif %}
+
+### Topics of interest
+{% for topic in w.topics_of_interest %}
+- {{ topic }}
+{% endfor %}
+
+See **Call for papers** below for submission details.
+
+### Expected outcomes
+{% for outcome in w.expected_outcomes %}
+- {{ outcome }}
+{% endfor %}
+</section>
+
+<section id="program" class="home-section" tabindex="-1">
+## Program
+
+{{ site.data.program.intro }}
+
+> {{ site.data.program.note }}
+
+| Time | Session |
+|---:|---|
+{% for item in site.data.program.schedule %}
+| {{ item.time }} | {{ item.session }} |
+{% endfor %}
+
+### Invited speakers / panelists
+{% if site.data.people.featured_speakers.size > 0 %}
+{% for speaker in site.data.people.featured_speakers %}
+- **{{ speaker.name }}**, {{ speaker.affiliation }}{% if speaker.title %} — {{ speaker.title }}{% endif %}
+{% endfor %}
+{% else %}
+**TBD** — add speakers in `_data/people.yml` under `featured_speakers`.
+{% endif %}
+</section>
+
+<section id="call-for-papers" class="home-section" tabindex="-1">
+## Call for papers
+
+{% for line in site.data.submission.instructions %}
+{{ line }}
+
+{% endfor %}
+
+### Intended audience (not exhaustive)
+We encourage submissions from simulation-driven communities (e.g., FEM, CFD, multiphysics) and the growing AI-for-science/SciML ecosystem (e.g., surrogate modeling, physics-informed methods), as well as compiler/runtime/library developers and hardware–software co-design researchers.
+
+### Topics
+Submissions may include (but are not limited to):
+
+{% for topic in site.data.submission.topics %}
+- {{ topic }}
+{% endfor %}
+
+### Submission instructions
+{% if site.data.submission.portal_url != "" %}
+- **Submission portal:** [{{ site.data.submission.portal_label | default: site.data.submission.portal_url }}]({{ site.data.submission.portal_url }})
+{% else %}
+- **Submission portal:** TBD — add `portal_url` (and optional `portal_label`) in `_data/submission.yml`.
+{% endif %}
+
+{% if site.data.submission.template_url != "" %}
+- **Template:** [Author template]({{ site.data.submission.template_url }})
+{% else %}
+- **Template:** TBD — add `template_url` in `_data/submission.yml`.
+{% endif %}
+
+{% if site.data.submission.page_limit != "" %}
+- **Page limit:** {{ site.data.submission.page_limit }}
+{% else %}
+- **Page limit:** TBD — add `page_limit` in `_data/submission.yml`.
+{% endif %}
+
+- **Review model:** {{ site.data.submission.review_model | default: "TBD" }}
+
+For questions, use the **Contact** section at the bottom of this page.
+</section>
+
+<section id="important-dates" class="home-section" tabindex="-1">
+## Important dates
+
+> Dates may change and will be updated as milestones are finalized.
+
+{% for item in site.data.dates %}
+- **{{ item.label }}:** {{ item.date }}
+{% endfor %}
+</section>
+
+<section id="committees" class="home-section" tabindex="-1">
+## Committees
+
+### Organizing committee
+{% for person in site.data.people.organizers %}
+- **{{ person.name }}**, {{ person.affiliation }}
+{% endfor %}
+
+### Program committee
+{% if site.data.people.program_committee.size > 0 %}
+{% for person in site.data.people.program_committee %}
+- **{{ person.name }}**, {{ person.affiliation }}
+{% endfor %}
+{% else %}
+**TBD** — add members as a list under `program_committee` in `_data/people.yml`.
+{% endif %}
+</section>
+
+<section id="accepted-papers" class="home-section" tabindex="-1">
+## Accepted papers
+
+{% if accepted.papers.size > 0 %}
+{% for paper in accepted.papers %}
+- **{{ paper.title }}**
+  {% if paper.authors %}<br>Authors: {{ paper.authors }}{% endif %}
+  {% if paper.links %}<br>{{ paper.links }}{% endif %}
+{% endfor %}
+{% else %}
+**TBD** — will be posted after notifications. Add entries under `papers` in `_data/accepted-papers.yml`.
+{% endif %}
+</section>
+
+<section id="contact" class="home-section" tabindex="-1">
+## Contact
+
+For questions about the workshop, submissions, or sponsorship:
+
+{% if site.data.contact.email != "" %}
+- Email: **{{ site.data.contact.email }}**
+{% else %}
+- Email: **TBD** — set `email` in `_data/contact.yml`.
+{% endif %}
+
+{% if site.data.contact.sponsorship_email != "" %}
+- Sponsorship: **{{ site.data.contact.sponsorship_email }}**
+{% endif %}
+
+### Updates
+{% for note in site.data.contact.notes %}
+- {{ note }}
+{% endfor %}
+</section>
