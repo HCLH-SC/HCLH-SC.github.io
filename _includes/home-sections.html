@@ -5,9 +5,9 @@
 *{{ w.tagline }}*
 {% endif %}
 
-**Workshop at {{ w.sc_event.name }} ({{ w.status_label }}).**
-
-## Workshop Overview
+<div class="overview-layout">
+<div class="overview-layout__text" markdown="1">
+## Workshop Overview {#workshop-overview}
 {% if w.overview_extra and w.overview_extra.size > 0 %}
 {% for paragraph in w.overview_extra %}
 {{ paragraph }}
@@ -30,6 +30,13 @@ See **Call for papers** below for submission details.
 {% for outcome in w.expected_outcomes %}
 - {{ outcome }}
 {% endfor %}
+</div>
+{% if w.overview_logo and w.overview_logo.file %}
+<aside class="overview-layout__logo">
+  <img src="{{ w.overview_logo.file | relative_url }}" alt="{{ w.overview_logo.alt | default: 'SC26' }}" width="433" height="621" loading="lazy" decoding="async">
+</aside>
+{% endif %}
+</div>
 
 ## Workshop Schedule {#program}
 
@@ -65,42 +72,30 @@ See **Call for papers** below for submission details.
 
 ## Call for papers {#call-for-papers}
 
-{% for line in site.data.submission.instructions %}
-{{ line }}
+{% for p in site.data.submission.intro_paragraphs %}
+{{ p }}
 
 {% endfor %}
 
-### Intended audience (not exhaustive)
-We encourage submissions from simulation-driven communities (e.g., FEM, CFD, multiphysics) and the growing AI-for-science/SciML ecosystem (e.g., surrogate modeling, physics-informed methods), as well as compiler/runtime/library developers and hardware–software co-design researchers.
-
-### Topics
-Submissions may include (but are not limited to):
+### {{ site.data.submission.topics_heading }}
 
 {% for topic in site.data.submission.topics %}
 - {{ topic }}
 {% endfor %}
 
-When you are ready to submit, use the following (placeholders until official SC workshop submission opens):
+### Submission
+
+{{ site.data.submission.submission_guidelines }}
 
 {% if site.data.submission.portal_url != "" %}
-- **Submission portal:** [{{ site.data.submission.portal_label | default: site.data.submission.portal_url }}]({{ site.data.submission.portal_url }})
+**Submission:** [{{ site.data.submission.portal_label | default: site.data.submission.portal_url }}]({{ site.data.submission.portal_url }}) — {{ site.data.submission.proceedings_note }}
 {% else %}
-- **Submission portal:** TBD — add `portal_url` (and optional `portal_label`) in `_data/submission.yml`.
+**Submission link** ({{ site.data.submission.proceedings_note }}): *{{ site.data.submission.portal_link_placeholder }}* — replace with the official SC workshop submission URL in `_data/submission.yml` (`portal_url` / `portal_label`).
 {% endif %}
 
 {% if site.data.submission.template_url != "" %}
-- **Template:** [Author template]({{ site.data.submission.template_url }})
-{% else %}
-- **Template:** TBD — add `template_url` in `_data/submission.yml`.
+- **ACM template:** [link]({{ site.data.submission.template_url }})
 {% endif %}
-
-{% if site.data.submission.page_limit != "" %}
-- **Page limit:** {{ site.data.submission.page_limit }}
-{% else %}
-- **Page limit:** TBD — add `page_limit` in `_data/submission.yml`.
-{% endif %}
-
-- **Review model:** {{ site.data.submission.review_model | default: "TBD" }}
 
 {% if site.data.contact.email != "" %}
 For questions, email **{{ site.data.contact.email }}**.

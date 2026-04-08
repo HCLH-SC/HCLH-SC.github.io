@@ -12,9 +12,9 @@ This repository contains the official website for the **High-Accuracy Computing 
 
 | You want to change… | Edit… |
 |---------------------|--------|
-| Workshop name, tagline, status, SC venue/date, banner, default overview paragraphs, topics, outcomes | `_data/workshop.yml` — optional opening copy: `overview_extra` (list of paragraphs) |
+| Workshop name, tagline, banner, overview text, topics, outcomes, optional **overview logo** beside Workshop Overview | `_data/workshop.yml` (`overview_logo.file` / `overview_logo.alt`) |
 | Schedule, program blurb | `_data/program.yml` |
-| CfP instructions, topics, submission portal/template/limits | `_data/submission.yml` |
+| CfP (intro, topics, submission text, proceedings note, portal URL/label) | `_data/submission.yml` |
 | Important dates | `_data/dates.yml` |
 | Organizers, program committee, featured speakers | `_data/people.yml` |
 | Organizer contact email (shown in Call for papers) | `_data/contact.yml` (`email`; optional `sponsorship_email`) |

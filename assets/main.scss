@@ -16,6 +16,27 @@
   border-bottom: 1px solid #222;
 }
 
+/* Flush with banner: no gap or rule between nav bar and hero image */
+.site-header.site-header--nav-only {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+main.page-content:has(.workshop-home) {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+article.workshop-home {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.workshop-home > .site-banner-bleed {
+  margin-top: 0;
+}
+
 .site-header .wrapper {
   max-width: none;
   width: 100%;
@@ -24,20 +45,82 @@
   padding-right: 1.5rem;
 }
 
-/* Nav-only header (no site title link) */
+/* Nav-only header: center the tab row (Minima defaults to right-aligned nav) */
 .site-header--nav-only .wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  position: relative;
+  text-align: center;
 }
 
 .site-header--nav-only .site-nav {
-  float: none;
-  position: relative;
-  right: auto;
-  top: auto;
+  float: none !important;
+  position: relative !important;
+  right: auto !important;
+  left: auto !important;
+  top: auto !important;
+  margin: 0 auto;
   line-height: inherit;
+  width: 100%;
+  max-width: 100%;
+}
+
+.site-header--nav-only .site-nav .trigger {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 1.15rem;
+  float: none !important;
+}
+
+/* Minima adds margin-right between links; use flex gap instead */
+.site-header--nav-only .site-nav .page-link:not(:last-child) {
+  margin-right: 0 !important;
+}
+
+/*
+ * Minima’s palm breakpoint absolutely positions .site-nav to the right — undo for center layout.
+ * ($on-palm is typically max-width: 600px.)
+ */
+@media screen and (max-width: 600px) {
+  .site-header--nav-only .site-nav {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    float: none !important;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .site-header--nav-only .site-nav label[for="nav-trigger"] {
+    float: none !important;
+    margin: 0 auto 0.35rem !important;
+  }
+
+  .site-header--nav-only .site-nav .menu-icon {
+    float: none !important;
+  }
+
+  .site-header--nav-only .site-nav .menu-icon svg path {
+    fill: #f0f0f0;
+  }
+
+  .site-header--nav-only .site-nav .trigger {
+    padding-top: 0.25rem;
+    justify-content: center;
+  }
+
+  .site-header--nav-only .site-nav .page-link {
+    margin-left: 0 !important;
+  }
 }
 
 .site-header .site-nav .page-link {
@@ -65,6 +148,80 @@
 /* In-page anchors (headings carry ids from Kramdown IAL) */
 .workshop-home .post-content [id] {
   scroll-margin-top: 4.5rem;
+}
+
+/* Main workshop title larger than all section (h2) headings */
+.workshop-home .post-content > h1#overview {
+  font-size: clamp(1.9rem, 4.5vw, 2.85rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+/* Same section-heading size for Workshop Overview, Workshop Schedule, Call for papers, etc. */
+.workshop-home .post-content h2 {
+  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 0.65rem;
+}
+
+.workshop-home .post-content h2:first-of-type {
+  margin-top: 1.25rem;
+}
+
+.workshop-home .post-content h2:not(:first-of-type) {
+  margin-top: 1.75rem;
+}
+
+/* Workshop Overview + SC logo (AI4S-style two columns) */
+.overview-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem 2.25rem;
+  margin: 0 0 1.75rem;
+}
+
+.overview-layout__text {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+
+.overview-layout__logo {
+  flex: 0 1 14rem;
+  max-width: 100%;
+  margin-left: auto;
+  text-align: center;
+}
+
+.overview-layout__logo img {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  .overview-layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .overview-layout__logo {
+    flex-basis: auto;
+    margin-left: 0;
+    order: 2;
+  }
+
+  .overview-layout__text {
+    order: 1;
+  }
+
+  .overview-layout__logo img {
+    max-width: 220px;
+  }
 }
 
 /*

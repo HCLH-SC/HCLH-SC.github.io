@@ -1,16 +1,35 @@
 portal_url: ""
 portal_label: ""
 template_url: ""
-page_limit: ""
+page_limit: "5–8 pages (2-column, U.S. letter), excluding references"
 review_model: single-blind
-instructions:
-  - HCLH solicits contributions on methods, tools, and experiences that enable accurate, stable, and reproducible scientific computing on increasingly low-precision hardware.
-  - Submission details will be finalized once workshop approval and conference submission setup are complete.
+
+intro_paragraphs:
+  - |
+    Modern high-performance computing systems increasingly prioritize reduced-precision arithmetic such as FP16, BF16, TF32, FP8, and integer formats to improve performance and energy efficiency. At the same time, many scientific applications continue to require high accuracy, numerical stability, and reproducibility. This growing mismatch between hardware trends and application requirements presents a fundamental challenge for the HPC community. Given this changing landscape, the SC26 Workshop on High Accuracy Computing on Low Precision Hardware aims to build a cross-disciplinary community around precision-aware scientific computing by bringing together expertise from HPC, numerical analysis, computer architecture, compilers, libraries, and scientific application domains. In doing so, the workshop will provide a forum for researchers and practitioners from academia, national laboratories, and industry to discuss emerging techniques, practical deployment experiences, and evaluation methodologies that jointly consider performance, energy efficiency, and numerical fidelity.
+  - |
+    A central goal of the workshop will be to advance scientifically reliable computation on low-precision hardware. The workshop will therefore welcome contributions on mixed-precision and precision-adaptive algorithms, floating-point emulation techniques such as FP64 emulation and Ozaki-style schemes, and alternative number systems such as posits. It will also cover methods for understanding numerical sensitivity, instability, and error propagation in scientific workloads; formal and empirical techniques for analyzing conditioning and robustness; algorithms, software, and runtime systems that adapt precision dynamically; and compiler and library support for precision-aware execution. Application case studies will also be in scope, including work in finite element methods, CFD, multiphysics, linear algebra, and AI-for-science workflows.
+
+topics_heading: "Topics will include but will not be limited to"
+
 topics:
-  - Techniques, analyses, and tooling for characterizing numerical sensitivity in scientific workloads (kernels, solver pipelines, full simulations)
-  - Frameworks for reasoning about numerical stability, conditioning, and error propagation
-  - Mixed-precision algorithms, reliability safeguards, and precision-adaptive methodologies beyond dense linear algebra
-  - Precision-extension approaches (e.g., FP64 emulation) for general-purpose scalar arithmetic
-  - Alternative number formats (e.g., posits, unum-inspired representations) in HPC workflows
-  - Compiler, runtime, and library support for precision-aware execution and automated precision selection
-  - Application experiences and case studies: numerical fidelity vs. performance/energy
+  - Mixed-precision and precision-adaptive algorithms
+  - Precision-aware iterative methods, solvers, and preconditioners
+  - Floating-point emulation techniques, including FP64 emulation and Ozaki-style schemes
+  - Alternative number formats and numerical representations, including posits and custom formats
+  - Numerical stability, conditioning, error propagation, and robustness analysis, including formal and empirical methods
+  - Tools for numerical debugging, verification, sensitivity analysis, and robustness evaluation
+  - Compiler, runtime, and library support for precision-aware execution
+  - Hardware/software co-design and use of low-precision accelerators for accurate scientific computing
+  - AI-driven or agentic methods for precision-aware analysis, tuning, and transformation of scientific software
+  - Application studies in areas such as FEM, CFD, multiphysics, linear algebra, and AI-for-science workflows
+  - Benchmarking and evaluation methodologies that jointly consider performance, energy efficiency, and numerical fidelity
+
+submission_guidelines: |
+  Authors are invited to submit manuscripts in English structured as technical papers of up to 8 pages, with a minimum of 5 pages, in 2-column format (U.S. letter, 8.5" × 11"), excluding references, using the ACM proceedings template. Submissions are single-blind. Papers not conforming to these guidelines may be returned without review.
+
+  All manuscripts will be peer reviewed and evaluated on correctness, originality, technical strength, significance, clarity of presentation, and relevance to the workshop. Submitted papers must represent original unpublished work that is not currently under review for another conference or journal. At least one author of each accepted paper must register for and attend the workshop.
+
+proceedings_note: Accepted papers will appear in the SC26 Workshops Proceedings.
+
+portal_link_placeholder: "SC submission site link here"
