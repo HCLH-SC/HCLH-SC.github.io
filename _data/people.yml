@@ -11,5 +11,31 @@ organizers:
     affiliation: Lawrence Berkeley National Laboratory (LBNL)
   - name: Balavignesh Vemparala
     affiliation: Synopsys, Inc.
-program_committee: []
+program_committee:
+  - name: Markus Eisenbach
+    affiliation: Oak Ridge National Laboratory (ORNL)
+  - name: Taylor Childers
+    affiliation: Argonne National Laboratory (ANL)
+  - name: Hartwig Anzt
+    affiliation: Technical University of Munich, Germany (TUM)
+  - name: Sherry Li
+    affiliation: Lawrence Berkeley National Laboratory (LBNL)
+  - name: Rui Peng Li
+    affiliation: Lawrence Livermore National Laboratory (LLNL)
+  - name: Dilip Asthagiri
+    affiliation: Oak Ridge National Laboratory (ORNL)
+  - name: Thomas Gruetzmacher
+    affiliation: NVIDIA Corporation (NVIDIA)
+  - name: Esteban Rangel
+    affiliation: Argonne National Laboratory (ANL)
+  - name: Oscar Hernandez Mendoza
+    affiliation: Oak Ridge National Laboratory (ORNL)
+  - name: Pratik Nayak
+    affiliation: Technical University of Munich, Germany (TUM)
+  - name: Longfei Gao
+    affiliation: Argonne National Laboratory (ANL)
+  - name: Nicholson Koukpaizan
+    affiliation: Oak Ridge National Laboratory (ORNL)
+  - name: Kasia Swirydowicz
+    affiliation: Advanced Micro Devices, Inc. (AMD)
 featured_speakers: []

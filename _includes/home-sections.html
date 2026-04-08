@@ -1,13 +1,4 @@
 {% assign w = site.data.workshop %}
-{% assign accepted = site.data["accepted-papers"] %}
-{% if w.banner and w.banner.file %}
-<div class="site-banner-bleed">
-<figure class="site-banner">
-  <img src="{{ w.banner.file | relative_url }}" alt="{{ w.banner.alt | default: w.full_title }}" width="2032" height="528" loading="eager" decoding="async">
-</figure>
-</div>
-
-{% endif %}
 # {{ w.full_title }} ({{ w.short_name }}) {#overview}
 
 {% if w.tagline %}
@@ -16,7 +7,7 @@
 
 **Workshop at {{ w.sc_event.name }} ({{ w.status_label }}).**
 
-## Overview
+## Workshop Overview
 {% if w.overview_extra and w.overview_extra.size > 0 %}
 {% for paragraph in w.overview_extra %}
 {{ paragraph }}
@@ -27,12 +18,6 @@
 {{ paragraph }}
 
 {% endfor %}
-
-{% if w.sc_event.location != "" or w.sc_event.date != "" %}
-### Venue and timing
-- **Location:** {{ w.sc_event.location | default: "TBD" }}
-- **Date:** {{ w.sc_event.date | default: "TBD" }}
-{% endif %}
 
 ### Topics of interest
 {% for topic in w.topics_of_interest %}
@@ -46,17 +31,28 @@ See **Call for papers** below for submission details.
 - {{ outcome }}
 {% endfor %}
 
-## Program {#program}
+## Workshop Schedule {#program}
 
 {{ site.data.program.intro }}
 
-> {{ site.data.program.note }}
-
-| Time | Session |
-|---:|---|
+<div class="schedule-table-wrap" role="region" aria-label="Workshop schedule">
+<table class="schedule-table">
+  <thead>
+    <tr>
+      <th scope="col">Time</th>
+      <th scope="col">Session</th>
+    </tr>
+  </thead>
+  <tbody>
 {% for item in site.data.program.schedule %}
-| {{ item.time }} | {{ item.session }} |
+    <tr>
+      <td class="schedule-time">{{ item.time | escape }}</td>
+      <td class="schedule-session">{{ item.session | escape }}</td>
+    </tr>
 {% endfor %}
+  </tbody>
+</table>
+</div>
 
 ### Invited speakers / panelists
 {% if site.data.people.featured_speakers.size > 0 %}
@@ -84,7 +80,8 @@ Submissions may include (but are not limited to):
 - {{ topic }}
 {% endfor %}
 
-### Submission instructions
+When you are ready to submit, use the following (placeholders until official SC workshop submission opens):
+
 {% if site.data.submission.portal_url != "" %}
 - **Submission portal:** [{{ site.data.submission.portal_label | default: site.data.submission.portal_url }}]({{ site.data.submission.portal_url }})
 {% else %}
@@ -105,7 +102,11 @@ Submissions may include (but are not limited to):
 
 - **Review model:** {{ site.data.submission.review_model | default: "TBD" }}
 
-For questions, use the **Contact** section at the bottom of this page.
+{% if site.data.contact.email != "" %}
+For questions, email **{{ site.data.contact.email }}**.
+{% else %}
+For questions, email the organizers (address TBD in `_data/contact.yml`).
+{% endif %}
 
 ## Important dates {#important-dates}
 
@@ -130,34 +131,3 @@ For questions, use the **Contact** section at the bottom of this page.
 {% else %}
 **TBD** — add members as a list under `program_committee` in `_data/people.yml`.
 {% endif %}
-
-## Accepted papers {#accepted-papers}
-
-{% if accepted.papers.size > 0 %}
-{% for paper in accepted.papers %}
-- **{{ paper.title }}**
-  {% if paper.authors %}<br>Authors: {{ paper.authors }}{% endif %}
-  {% if paper.links %}<br>{{ paper.links }}{% endif %}
-{% endfor %}
-{% else %}
-**TBD** — will be posted after notifications. Add entries under `papers` in `_data/accepted-papers.yml`.
-{% endif %}
-
-## Contact {#contact}
-
-For questions about the workshop, submissions, or sponsorship:
-
-{% if site.data.contact.email != "" %}
-- Email: **{{ site.data.contact.email }}**
-{% else %}
-- Email: **TBD** — set `email` in `_data/contact.yml`.
-{% endif %}
-
-{% if site.data.contact.sponsorship_email != "" %}
-- Sponsorship: **{{ site.data.contact.sponsorship_email }}**
-{% endif %}
-
-### Updates
-{% for note in site.data.contact.notes %}
-- {{ note }}
-{% endfor %}

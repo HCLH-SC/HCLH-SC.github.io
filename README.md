@@ -17,8 +17,8 @@ This repository contains the official website for the **High-Accuracy Computing 
 | CfP instructions, topics, submission portal/template/limits | `_data/submission.yml` |
 | Important dates | `_data/dates.yml` |
 | Organizers, program committee, featured speakers | `_data/people.yml` |
-| Contact email, sponsorship email, update bullets | `_data/contact.yml` |
-| Accepted papers list | `_data/accepted-papers.yml` |
+| Organizer contact email (shown in Call for papers) | `_data/contact.yml` (`email`; optional `sponsorship_email`) |
+| Accepted papers (optional; not shown on the site until you add a section again) | `_data/accepted-papers.yml` |
 | Nav labels or Venue URL | `_data/nav.yml` |
 
 To change section **order** or add a new anchored section, update both `_includes/home-sections.html` and `_data/nav.yml` (and any redirect stubs if you rename anchors).

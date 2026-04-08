@@ -1,4 +1,4 @@
 ---
 layout: redirect
-redirect_anchor: contact
+redirect_anchor: overview
 ---

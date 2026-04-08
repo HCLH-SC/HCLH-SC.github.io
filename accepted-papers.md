@@ -1,4 +1,4 @@
 ---
 layout: redirect
-redirect_anchor: accepted-papers
+redirect_anchor: overview
 ---

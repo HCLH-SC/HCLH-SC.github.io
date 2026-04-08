@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
+{% assign w = site.data.workshop %}
 <article class="post workshop-home">
+{% if w.banner and w.banner.file %}
+  <div class="site-banner-bleed">
+    <figure class="site-banner">
+      <img src="{{ w.banner.file | relative_url }}" alt="{{ w.banner.alt | default: w.full_title }}" width="2032" height="528" loading="eager" decoding="async">
+    </figure>
+  </div>
+{% endif %}
   <div class="post-content">
     {{ content }}
   </div>

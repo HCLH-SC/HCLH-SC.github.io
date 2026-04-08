@@ -4,7 +4,7 @@ items:
     id: overview
   - label: Venue
     external: "https://sc26.supercomputing.org/attendees/convention-center/"
-  - label: Program
+  - label: Workshop Schedule
     id: program
   - label: Call for papers
     id: call-for-papers
