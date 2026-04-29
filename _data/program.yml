@@ -7,7 +7,7 @@ schedule:
     session: Invited Talk I
     # 30 min (25 min talk + 5 min Q/A)
   - time: 09:40 – 10:15
-    session: Accepted Papers: Session I
+    session: "Accepted Papers: Session I"
     # 35 min (2 papers × 13 min + ~9 min buffer/transitions)
   - time: 10:15 – 10:30
     session: Break
@@ -16,7 +16,7 @@ schedule:
     session: Invited Talk II
     # 30 min (25 min talk + 5 min Q/A)
   - time: 11:00 – 11:30
-    session: Accepted Papers: Session II
+    session: "Accepted Papers: Session II"
     # 30 min (2 papers × 13 min + ~4 min buffer/transitions)
   - time: 11:30 – 12:20
     session: Panel Discussion
