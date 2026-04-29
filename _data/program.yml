@@ -2,17 +2,25 @@ intro: The workshop will feature invited talks, peer-reviewed paper presentation
 schedule:
   - time: 09:00 – 09:10
     session: Welcome and Introductory Remarks (Organizing Committee)
-  - time: 09:10 – 09:45
+    # 10 min
+  - time: 09:10 – 09:40
     session: Invited Talk I
-  - time: 09:45 – 10:15
-    session: Accepted Paper Session I (2 papers; 10 min + 3 min Q/A each)
+    # 30 min (25 min talk + 5 min Q/A)
+  - time: 09:40 – 10:15
+    session: Accepted Papers: Session I
+    # 35 min (2 papers × 13 min + ~9 min buffer/transitions)
   - time: 10:15 – 10:30
     session: Break
-  - time: 10:30 – 11:05
+    # 15 min
+  - time: 10:30 – 11:00
     session: Invited Talk II
-  - time: 11:05 – 11:45
-    session: Accepted Paper Session II (3 papers; 10 min + 3 min Q/A each)
-  - time: 11:45 – 12:15
+    # 30 min (25 min talk + 5 min Q/A)
+  - time: 11:00 – 11:30
+    session: Accepted Papers: Session II
+    # 30 min (2 papers × 13 min + ~4 min buffer/transitions)
+  - time: 11:30 – 12:20
     session: Panel Discussion
-  - time: 12:15 – 12:30
+    # 50 min
+  - time: 12:20 – 12:30
     session: Concluding Remarks and Open Discussion
+    # 10 min
