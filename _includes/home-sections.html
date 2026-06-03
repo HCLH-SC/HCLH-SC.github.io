@@ -100,7 +100,7 @@ For questions, add contacts under `contacts` in `_data/contact.yml`.
 ## Important dates {#important-dates}
 
 {% for item in site.data.dates %}
-- **{{ item.label }}:** {{ item.date }}
+- **{{ item.label }}:** {% if item.extended_date %}<s>{{ item.date }}</s> {{ item.extended_date }}{% else %}{{ item.date }}{% endif %}
 {% endfor %}
 
 ## Committees {#committees}

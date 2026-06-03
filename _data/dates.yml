@@ -1,6 +1,9 @@
 - label: Submission deadline
   date: 31 July 2026
+  extended_date: 7 August 2026
 - label: Notification of acceptance
   date: 31 August 2026
+  # extended_date: 4 September 2026
 - label: Camera-ready deadline
   date: 21 September 2026
+  # extended_date: 25 September 2026
