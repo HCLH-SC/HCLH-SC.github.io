@@ -80,9 +80,6 @@ Papers should be submitted electronically at: {% if sub.portal_url != "" %}[{{ s
 
 {{ sub.proceedings_note }}
 
-{% if site.data.submission.template_url != "" %}
-- **IEEE template:** [link]({{ site.data.submission.template_url }})
-{% endif %}
 
 {% assign contact_data = site.data.contact %}
 {% if contact_data.contacts and contact_data.contacts.size > 0 %}
