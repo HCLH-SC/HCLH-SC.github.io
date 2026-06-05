@@ -1,7 +1,7 @@
 portal_url: ""
 portal_label: ""
 template_url: "https://www.ieee.org/conferences/publishing/templates"
-page_limit: "6–10 pages (2-column, U.S. letter), excluding references"
+page_limit: "4–8 pages (2-column, U.S. letter), excluding references"
 review_model: double-blind
 
 intro_paragraphs:
@@ -26,7 +26,7 @@ topics:
   - Benchmarking and evaluation methodologies that jointly consider performance, energy efficiency, and numerical fidelity
 
 submission_guidelines: |
-  Authors are invited to submit manuscripts in English as technical papers of 6 to 10 pages in 2-column format (U.S. letter, 8.5" × 11"), excluding references, using the [IEEE proceedings template](https://www.ieee.org/conferences/publishing/templates). Submissions are double-blind. Submissions received after the due date, exceeding the length limit, or not appropriately structured may not be considered.
+  Authors are invited to submit manuscripts in English as technical papers of 4 to 8 pages in 2-column format (U.S. letter, 8.5" × 11"), excluding references, using the [IEEE proceedings template](https://www.ieee.org/conferences/publishing/templates). Submissions are double-blind. Submissions received after the due date, exceeding the length limit, or not appropriately structured may not be considered.
 
   All manuscripts will be peer-reviewed and judged on correctness, originality, technical strength and significance, quality of presentation, and interest and relevance to the workshop attendees. Each submission will receive at least 3 reviews. The review period runs from the submission deadline to the notification date. Revisions are not accepted; decisions are final. Submitted papers must represent original unpublished research that is not currently under review for any other conference or journal. Submissions not following these guidelines will be rejected without review, and further action may include reporting the authors to the sponsors of the conference and appropriate bodies governing ethics in scientific research. At least one author of an accepted paper must register for and attend the workshop. Authors may contact the workshop organizers for more information.
 
