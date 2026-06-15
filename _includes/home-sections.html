@@ -76,7 +76,7 @@
 {{ site.data.submission.submission_guidelines }}
 
 {% assign sub = site.data.submission %}
-Papers should be submitted electronically at: {% if sub.portal_url != "" %}[{{ sub.portal_label | default: sub.portal_url }}]({{ sub.portal_url }}){% else %}*{{ sub.portal_link_placeholder }}*{% endif %}, {{ sub.workshop_submission_label }}.
+Papers must be submitted electronically via {% if sub.portal_url != "" %}[{{ sub.portal_label | default: sub.portal_url }}]({{ sub.portal_url }}){% else %}*{{ sub.portal_link_placeholder }}*{% endif %} under {{ sub.workshop_submission_label }}.
 
 {{ sub.proceedings_note }}
 
