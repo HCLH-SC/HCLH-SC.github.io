@@ -1,6 +1,6 @@
 Apologies if you receive multiple copies of this email!
 
-========================================================================
+===========================================================================
 
                             CALL FOR PAPERS
 
@@ -9,14 +9,11 @@ Apologies if you receive multiple copies of this email!
                              (HCLH '26)
 
     In conjunction with SC26: The International Conference for High
+  Performance Computing, Networking, Storage and Analysis, Nov 15–20, 2026,
+                          Chicago, IL, USA
+                      (https://hclh-sc.github.io)
 
-  Performance Computing, Networking, Storage and Analysis, November
-
-             15–20, 2026, Chicago, IL, USA.
-
-                    https://hclh-sc.github.io
-
-========================================================================
+===========================================================================
 
 Dates
 
