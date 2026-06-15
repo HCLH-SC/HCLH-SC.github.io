@@ -10,8 +10,8 @@ overview_logo:
 status_label: ""
 sc_event:
   name: "SC '26"
-  location: TBD
-  date: TBD
+  location: Chicago, IL
+  date: November 15–20, 2026
 # Optional extra paragraphs under “Workshop Overview” (shown before `overview`). Use [] when empty.
 overview_extra: []
 overview:

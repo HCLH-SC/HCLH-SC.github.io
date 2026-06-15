@@ -1,5 +1,5 @@
-portal_url: ""
-portal_label: ""
+portal_url: "https://submissions.supercomputing.org"
+portal_label: "SC'26 Submissions Portal"
 template_url: "https://www.ieee.org/conferences/publishing/templates"
 page_limit: "4–8 pages (2-column, U.S. letter), excluding references"
 review_model: double-blind
