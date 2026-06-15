@@ -1,0 +1,130 @@
+Apologies if you receive multiple copies of this email!
+
+========================================================================
+
+                            CALL FOR PAPERS
+
+     SC26 Workshop on High-Accuracy Computing on Low-Precision Hardware
+
+                             (HCLH '26)
+
+    In conjunction with SC26: The International Conference for High
+
+  Performance Computing, Networking, Storage and Analysis, November
+
+             15–20, 2026, Chicago, IL, USA.
+
+                    https://hclh-sc.github.io
+
+========================================================================
+
+Dates
+
+=====
+
+Paper submissions due: July 31st, 2026
+
+Notification of acceptance: August 31st, 2026
+
+Camera-ready papers due: September 21st, 2026
+
+Scope
+
+=====
+
+Modern high-performance computing systems increasingly prioritize
+reduced-precision arithmetic such as FP16, BF16, TF32, FP8, and
+integer formats to improve performance and energy efficiency. At the
+same time, many scientific applications continue to require high
+accuracy, numerical stability, and reproducibility. This growing
+mismatch between hardware trends and application requirements presents
+a fundamental challenge for the HPC community.
+
+The HCLH '26 workshop aims to bring together researchers, application
+scientists, system developers, and industry partners to explore
+algorithmic and implementation approaches enabling accurate scientific
+computing on low-precision hardware. The workshop will feature invited
+talks and solicited works highlighting mixed-precision methods,
+error-aware and adaptive numerical algorithms, floating-point emulation
+libraries, and practical deployment on large-scale systems. The
+workshop emphasizes building community-driven software ecosystems for
+broad adoption across domains, reducing duplication, and accelerating
+impact. By fostering discussion among application developers, numerical
+experts, and hardware vendors, the workshop will establish best
+practices, share lessons, and strengthen academia–industry
+collaboration to make low-precision hardware a reliable component of
+scientific workflows.
+
+Topics
+
+======
+
+Topics of interest include, but are not limited to:
+
+* Mixed-precision and precision-adaptive algorithms
+
+* Precision-aware iterative methods, solvers, and preconditioners
+
+* Floating-point emulation techniques, including FP64 emulation and
+  Ozaki-style schemes
+
+* Alternative number formats and numerical representations, including
+  posits and custom formats
+
+* Numerical stability, conditioning, error propagation, and robustness
+  analysis, including formal and empirical methods
+
+* Tools for numerical debugging, verification, sensitivity analysis,
+  and robustness evaluation
+
+* Compiler, runtime, and library support for precision-aware execution
+
+* Hardware/software co-design and use of low-precision accelerators
+  for accurate scientific computing
+
+* AI-driven or agentic methods for precision-aware analysis, tuning,
+  and transformation of scientific software
+
+* Application studies in areas such as FEM, CFD, multiphysics, linear
+  algebra, and AI-for-science workflows
+
+* Benchmarking and evaluation methodologies that jointly consider
+  performance, energy efficiency, and numerical fidelity
+
+Proceedings
+
+===========
+
+The final papers will be published in the SC Workshops Proceedings.
+
+Submissions and Format
+
+======================
+
+Authors are invited to submit manuscripts in English as technical
+papers of 4 to 8 pages in 2-column format (U.S. letter, 8.5" x 11"),
+excluding references, using the IEEE proceedings template
+(https://www.ieee.org/conferences/publishing/templates). Submissions
+are double-blind. Papers must be submitted via the SC'26 Submissions
+Portal (https://submissions.supercomputing.org) under SC26 Workshop:
+HCLH'26: High-Accuracy Computing on Low-Precision Hardware.
+
+Organizers
+
+==========
+
+Reet Barik, Argonne National Laboratory (ANL)
+Aditya Kashi, Oak Ridge National Laboratory (ORNL)
+Hao Lu, Oak Ridge National Laboratory (ORNL)
+Piotr Luszczek, MIT Lincoln Laboratory
+Paul Lin, Lawrence Berkeley National Laboratory (LBNL)
+Balavignesh Vemparala, Synopsys, Inc.
+
+Contact
+
+=======
+
+Please address workshop questions to:
+
+Reet Barik (rbarik@anl.gov)
+Aditya Kashi (kashia@ornl.gov)
