@@ -19,7 +19,7 @@ Dates
 
 =====
 
-Paper submissions due: July 31st, 2026
+Paper submissions due: August 14th, 2026
 
 Notification of acceptance: August 31st, 2026
 
@@ -114,7 +114,7 @@ Reet Barik, Argonne National Laboratory (ANL)
 Aditya Kashi, Oak Ridge National Laboratory (ORNL)
 Hao Lu, Oak Ridge National Laboratory (ORNL)
 Piotr Luszczek, MIT Lincoln Laboratory
-Paul Lin, Lawrence Berkeley National Laboratory (LBNL)
+Paul Lin, NVIDIA Corporation (NVIDIA)
 Balavignesh Vemparala, Synopsys, Inc.
 
 Contact
