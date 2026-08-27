@@ -38,4 +38,10 @@ program_committee:
     affiliation: Oak Ridge National Laboratory (ORNL)
   - name: Kasia Swirydowicz
     affiliation: Advanced Micro Devices, Inc. (AMD)
+  - name: Vitali Morozov
+    affiliation: Argonne National Laboratory (ANL)
+  - name: Natalie Beams
+    affiliation: University of Tennessee, Knoxville (UTK)
+  - name: Roman Iakymchuk
+    affiliation: Uppsala University, Sweden
 featured_speakers: []
