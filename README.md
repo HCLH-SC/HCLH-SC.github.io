@@ -18,7 +18,7 @@ This repository contains the official website for the **High-Accuracy Computing 
 | Important dates | `_data/dates.yml` |
 | Organizers, program committee, featured speakers | `_data/people.yml` |
 | People to contact (shown at end of Call for papers) | `_data/contact.yml` — list under `contacts` with `name` and `email` per person; optional legacy `email` if `contacts` is empty |
-| Accepted papers (optional; not shown on the site until you add a section again) | `_data/accepted-papers.yml` |
+| Accepted paper titles/presenters (slot into the `paper:` rows of the schedule) | `_data/accepted-papers.yml` |
 | Nav labels or Venue URL | `_data/nav.yml` |
 
 To change section **order** or add a new anchored section, update both `_includes/home-sections.html` and `_data/nav.yml` (and any redirect stubs if you rename anchors).

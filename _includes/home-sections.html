@@ -39,10 +39,12 @@
     </tr>
   </thead>
   <tbody>
+{% assign accepted = site.data['accepted-papers'].papers %}
 {% for item in site.data.program.schedule %}
+{% if item.paper %}{% assign idx = item.paper | minus: 1 %}{% assign p = accepted[idx] %}{% capture cell %}Accepted Paper {{ item.paper }}{% if p.title and p.title != "" %}: {{ p.title | escape }}{% endif %}{% if p.presenter and p.presenter != "" %}<br><span class="schedule-presenter">{{ p.presenter | escape }}</span>{% endif %}{% endcapture %}{% else %}{% capture cell %}{{ item.session | escape }}{% endcapture %}{% endif %}
     <tr>
       <td class="schedule-time">{{ item.time | escape }}</td>
-      <td class="schedule-session">{{ item.session | escape }}</td>
+      <td class="schedule-session">{{ cell }}</td>
     </tr>
 {% endfor %}
   </tbody>

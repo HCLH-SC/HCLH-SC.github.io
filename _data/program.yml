@@ -1,4 +1,9 @@
 intro: The workshop will feature invited talks, peer-reviewed paper presentations, and a panel discussion. A tentative schedule can be found below.
+
+# Rows with `paper: N` are accepted-paper slots. They render as
+# "Accepted Paper N", and pick up the title/presenter from entry N of
+# `papers` in _data/accepted-papers.yml once those are filled in.
+# Every other row uses `session:` for its label.
 schedule:
   - time: 14:00 – 14:05
     session: Welcome and Introductory Remarks (Organizing Committee)
@@ -6,21 +11,30 @@ schedule:
   - time: 14:05 – 14:30
     session: Invited Talk I
     # 25 min (20 min talk + 5 min Q/A)
-  - time: 14:30 – 15:00
-    session: "Accepted Papers: Session I"
-    # 30 min (2 papers × 13 min + ~4 min buffer/transitions)
+  - time: 14:30 – 14:45
+    paper: 1
+    # 15 min (talk + Q/A + changeover)
+  - time: 14:45 – 15:00
+    paper: 2
+    # 15 min (talk + Q/A + changeover)
   - time: 15:00 – 15:30
     session: Break
     # 30 min
   - time: 15:30 – 15:55
     session: Invited Talk II
     # 25 min (20 min talk + 5 min Q/A)
-  - time: 15:55 – 16:30
-    session: "Accepted Papers: Session II"
-    # 35 min (2 papers × 13 min + ~9 min buffer/transitions)
-  - time: 16:30 – 17:20
+  - time: 15:55 – 16:10
+    paper: 3
+    # 15 min (talk + Q/A + changeover)
+  - time: 16:10 – 16:25
+    paper: 4
+    # 15 min (talk + Q/A + changeover)
+  - time: 16:25 – 16:40
+    paper: 5
+    # 15 min (talk + Q/A + changeover)
+  - time: 16:40 – 17:25
     session: Panel Discussion
-    # 50 min
-  - time: 17:20 – 17:30
-    session: Concluding Remarks and Open Discussion
-    # 10 min
+    # 45 min
+  - time: 17:25 – 17:30
+    session: Concluding Remarks
+    # 5 min

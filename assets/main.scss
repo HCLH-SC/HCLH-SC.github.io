@@ -327,6 +327,14 @@ html {
   word-wrap: break-word;
 }
 
+/* Presenter name under an accepted-paper title — see _data/accepted-papers.yml */
+.schedule-table .schedule-presenter {
+  display: inline-block;
+  margin-top: 0.15rem;
+  color: #555;
+  font-size: 0.9em;
+}
+
 /* Red strikethrough for extended/superseded dates in Important Dates */
 s { color: #cc0000; }
 

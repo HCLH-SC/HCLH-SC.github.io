@@ -1,1 +1,22 @@
-papers: []
+# Accepted papers, in presentation order.
+#
+# Position in this list is the paper number: the 1st entry fills the
+# `paper: 1` row of the schedule in _data/program.yml, the 2nd fills
+# `paper: 2`, and so on.
+#
+# Leave `title` empty and the schedule row shows just "Accepted Paper N".
+# Fill it in and the row becomes "Accepted Paper N: <title>", with
+# `presenter` (optional) shown on a second line underneath.
+#
+# Titles and presenter names are plain text — no Markdown, no HTML.
+papers:
+  - title: ""
+    presenter: ""
+  - title: ""
+    presenter: ""
+  - title: ""
+    presenter: ""
+  - title: ""
+    presenter: ""
+  - title: ""
+    presenter: ""
