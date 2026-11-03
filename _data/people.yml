@@ -48,9 +48,10 @@ program_committee:
     affiliation: Oak Ridge National Laboratory (ORNL)
 # Invited speakers and panelists are separate lists (`invited_speakers`,
 # `panelists`), each in schedule order. Photos and bios come from the SC26
-# program (sess147), except Kasia Swirydowicz's photo (cropped from her page at
-# paranumal.com) and Eric Nielsen's photo and bio (from his aiaa.org page; the
-# bio is lightly trimmed).
+# program (sess147), except: Kasia Swirydowicz's photo (cropped from her page at
+# paranumal.com) and bio (provided by the organizers); Eric Nielsen's photo and
+# bio (from his aiaa.org page; the bio is lightly trimmed); Harun Bayraktar's
+# bio (provided by the organizers).
 # Optional fields: `title`, `photo`, `bio`.
 # `bio` is a list of paragraphs (plain text). Entries without a `photo` show an
 # initials placeholder; entries without a `bio` show no bio.
@@ -85,8 +86,9 @@ panelists:
   - name: Harun Bayraktar
     affiliation: NVIDIA Corporation (NVIDIA)
     photo: /assets/images/speakers/harun-bayraktar.jpg
+    # Bio provided by the organizers (replaces the SC text).
     bio:
-      - "Harun received his PhD degree in Mechanical Engineering from UC Berkeley in 2003. His doctoral research made heavy use of supercomputers to solve problems in computational biomechanics. After graduating, he joined Dassault Systèmes Simulia Corp. where he developed high-performance parallel numerical methods for computational mechanics and fluid dynamics. In 2010, Harun joined the Albany Engineered Composites where he led the Research and Technology efforts on advanced aerospace composite materials using physics based numerical simulations. Harun joined NVIDIA in 2017, and he has been leading the Math Libraries organization that builds software to help accelerate applications in science, engineering, Quantum Computing, and AI."
+      - "Since joining NVIDIA in 2017, Harun Bayraktar has been leading the Math Libraries organization which builds software to help accelerate applications in science, engineering, Quantum Computing, and artificial intelligence (AI). Prior to joining NVIDIA, Harun’s career path includes development of commercial HPC computational mechanics software and physics-based simulation research and technology development for advanced composites materials in aerospace. Harun holds a PhD in mechanical engineering from UC Berkeley."
   - name: Kasia Swirydowicz
     affiliation: Advanced Micro Devices, Inc. (AMD)
     photo: /assets/images/speakers/kasia-swirydowicz.jpg
