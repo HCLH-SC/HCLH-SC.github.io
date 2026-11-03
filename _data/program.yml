@@ -1,4 +1,8 @@
-intro: The workshop will feature invited talks, peer-reviewed paper presentations, and a panel discussion. The finalized schedule can be found below.
+intro: |
+  The workshop will feature invited talks, peer-reviewed paper presentations, and a panel discussion. The finalized schedule can be found below.
+
+  - **Time:** Monday, 16 November 2026, 2:00pm – 5:30pm CST
+  - **Location:** W181b
 
 # Session names and times mirror the SC26 program (sess147), except for the
 # closing "Concluding Remarks" row, which SC does not list.
@@ -10,45 +14,45 @@ intro: The workshop will feature invited talks, peer-reviewed paper presentation
 # `details:` list; each item is shown on its own line under the label.
 # Quote any text that contains a colon.
 schedule:
-  - time: 14:00 – 14:05
+  - time: 2:00pm – 2:05pm
     session: "High-Accuracy Computing on Low-Precision Hardware"
     details:
       - "Organizers: Reet Barik, Aditya Kashi, Piotr Luszczek, Paul Lin, Hao Lu, Balavignesh Vemparala Narayana Murthy"
     # 5 min
-  - time: 14:05 – 14:30
+  - time: 2:05pm – 2:30pm
     session: "Invited Talk with Eric Nielsen, Senior Research Scientist with the Computational AeroSciences Branch at NASA Langley Research Center"
     details:
       - "Presenter: Eric Nielsen"
     # 25 min (20 min talk + 5 min Q/A)
-  - time: 14:30 – 14:45
+  - time: 2:30pm – 2:45pm
     paper: 1
     # 15 min (talk + Q/A + changeover)
-  - time: 14:45 – 15:00
+  - time: 2:45pm – 3:00pm
     paper: 2
     # 15 min (talk + Q/A + changeover)
-  - time: 15:00 – 15:30
+  - time: 3:00pm – 3:30pm
     session: Afternoon Break
     # 30 min
-  - time: 15:30 – 15:55
+  - time: 3:30pm – 3:55pm
     session: "Invited Talk with Rob Schreiber, Distinguished Engineer at Cerebras Systems"
     details:
       - "Presenter: Rob Schreiber"
     # 25 min (20 min talk + 5 min Q/A)
-  - time: 15:55 – 16:10
+  - time: 3:55pm – 4:10pm
     paper: 3
     # 15 min (talk + Q/A + changeover)
-  - time: 16:10 – 16:25
+  - time: 4:10pm – 4:25pm
     paper: 4
     # 15 min (talk + Q/A + changeover)
-  - time: 16:25 – 16:40
+  - time: 4:25pm – 4:40pm
     paper: 5
     # 15 min (talk + Q/A + changeover)
-  - time: 16:40 – 17:25
+  - time: 4:40pm – 5:25pm
     session: "Mixed Precision at Scale: From Peak FLOPs to Trusted Science"
     details:
       - "Moderator: Piotr Luszczek"
       - "Panelists: Satoshi Matsuoka, Scott Atchley, Harun Bayraktar, Kasia Swirydowicz"
     # 45 min
-  - time: 17:25 – 17:30
+  - time: 5:25pm – 5:30pm
     session: Concluding Remarks
     # 5 min
