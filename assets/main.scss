@@ -335,6 +335,78 @@ html {
   font-size: 0.9em;
 }
 
+/* Invited speakers / panelists — see featured_speakers in _data/people.yml */
+.workshop-home .speaker-list {
+  margin: 1rem 0 1.5rem;
+}
+
+.workshop-home .speaker {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.1rem 0;
+  border-top: 1px solid #e3e3e3;
+}
+
+.workshop-home .speaker:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.workshop-home .speaker__photo {
+  flex: 0 0 120px;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.workshop-home .speaker__photo--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9ecef;
+  color: #666;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.workshop-home .speaker__text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.workshop-home .speaker__name {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.workshop-home .speaker__meta {
+  margin: 0.15rem 0 0.6rem;
+  color: #555;
+}
+
+.workshop-home .speaker__role {
+  font-weight: 600;
+}
+
+.workshop-home .speaker__bio {
+  margin: 0 0 0.6rem;
+}
+
+.workshop-home .speaker__bio:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .workshop-home .speaker {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
 /* Red strikethrough for extended/superseded dates in Important Dates */
 s { color: #cc0000; }
 

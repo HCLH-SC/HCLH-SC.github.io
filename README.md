@@ -16,7 +16,7 @@ This repository contains the official website for the **High-Accuracy Computing 
 | Schedule, program blurb | `_data/program.yml` |
 | CfP (intro, topics, submission text, proceedings note, portal URL/label) | `_data/submission.yml` |
 | Important dates | `_data/dates.yml` |
-| Organizers, program committee, featured speakers | `_data/people.yml` |
+| Organizers, program committee, featured speakers (each speaker can have `role`, `photo`, `bio`) | `_data/people.yml`; speaker photos go in `assets/images/speakers/` |
 | People to contact (shown at end of Call for papers) | `_data/contact.yml` — list under `contacts` with `name` and `email` per person; optional legacy `email` if `contacts` is empty |
 | Accepted paper titles/presenters (slot into the `paper:` rows of the schedule) | `_data/accepted-papers.yml` |
 | Nav labels or Venue URL | `_data/nav.yml` |

@@ -14,7 +14,10 @@ Use this list when workshop details are finalized. Edit the referenced files and
 |-----------------|----------|--------|
 | `name`          | Yes      | Full name |
 | `affiliation`   | Yes      | Institution or company |
-| `title`         | No       | Optional short line (talk title or role); shown after an em dash |
+| `title`         | No       | Optional short line (talk title or position); shown after an em dash |
+| `role`          | No       | Label shown before the affiliation, e.g. `Invited speaker` or `Panelist` |
+| `photo`         | No       | Path to a square headshot, e.g. `/assets/images/speakers/jane-doe.jpg`; without one, an initials placeholder is shown |
+| `bio`           | No       | List of plain-text paragraphs; without one, no bio is shown |
 
 **Example:**
 
