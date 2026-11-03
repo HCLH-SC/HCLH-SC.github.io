@@ -46,16 +46,17 @@ program_committee:
     affiliation: Uppsala University, Sweden
   - name: Sajal Dash
     affiliation: Oak Ridge National Laboratory (ORNL)
-# Invited speakers and panelists, in schedule order. Photos and bios come from
-# the SC26 program (sess147), except Kasia Swirydowicz's photo (cropped from her
-# page at paranumal.com) and Eric Nielsen's bio (from aiaa.org, lightly trimmed).
+# Invited speakers and panelists are separate lists (`invited_speakers`,
+# `panelists`), each in schedule order. Photos and bios come from the SC26
+# program (sess147), except Kasia Swirydowicz's photo (cropped from her page at
+# paranumal.com) and Eric Nielsen's photo and bio (from his aiaa.org page; the
+# bio is lightly trimmed).
 # Optional fields: `title`, `photo`, `bio`.
 # `bio` is a list of paragraphs (plain text). Entries without a `photo` show an
 # initials placeholder; entries without a `bio` show no bio.
-featured_speakers:
+invited_speakers:
   - name: Eric Nielsen
     affiliation: NASA Langley Research Center
-    role: Invited speaker
     photo: /assets/images/speakers/eric-nielsen.jpg
     # Bio from aiaa.org/people/eric-nielsen (written 2019). The outdated clause
     # "and has worked at Langley for the past 25 years" is removed.
@@ -64,34 +65,30 @@ featured_speakers:
       - "He received his PhD in Aerospace Engineering from Virginia Tech. Dr. Nielsen specializes in the development of computational aerodynamics software for the world’s most powerful computer systems. The software has been distributed to thousands of organizations around the country and supports major national research and engineering efforts at NASA, in industry, academia, the Department of Defense, and other government agencies. He has published extensively on the subject and has given presentations around the world on his work. Dr. Nielsen is a recipient of NASA’s Exceptional Achievement and Exceptional Engineering Achievement Medals as well as NASA Langley’s HJE Reid Award for best research publication."
   - name: Rob Schreiber
     affiliation: Cerebras Systems
-    role: Invited speaker
     photo: /assets/images/speakers/rob-schreiber.jpg
     bio:
       - "Rob Schreiber is a distinguished American computer scientist renowned for his foundational research in parallel computing, sequential and parallel algorithms for matrix computation, and compiler optimization."
       - "Schreiber earned his Ph.D. from Yale University in 1977 and later held faculty positions at Stanford University and Rensselaer Polytechnic Institute. Transitioning to industry, he served as Chief Scientist at Saxpy Computer, Assistant Director of the Exascale Computing Lab at Hewlett Packard Labs, and currently operates as a Software Architect at Cerebras Systems."
       - "A pioneer in parallel environments, Schreiber co-developed High Performance Fortran, co-authored the NAS Parallel Benchmarks, and was a key contributor to the sparse-matrix extension of MATLAB. His extensive honors include being named a SIAM Fellow in 2010 and an ACM Fellow in 2012 for his exceptional contributions to languages, compilers, and architectures for parallel scientific computing."
+panelists:
   - name: Satoshi Matsuoka
     affiliation: RIKEN and Tokyo Institute of Technology
-    role: Panelist
     photo: /assets/images/speakers/satoshi-matsuoka.jpg
     bio:
       - "Satoshi Matsuoka has been the director of RIKEN Center for Computational Science (R-CCS) since 2018. He is responsible for developing the supercomputer Fugaku which has become the fastest supercomputer in the world in all four major supercomputer rankings in 2020 and 2021 (Top500, HPCG, HPL-AI, Graph500), along with multitudes of ongoing cutting edge HPC research being conducted, including investigating post-Moore era computing, especially the future Fugaku NEXT supercomputer."
       - "He received many international acclaims, at the Tokyo Institute of Technology, where he still holds a professor position, to continue his research activities in HPC as well as scalable Big Data and AI. His longtime contribution for the computer science research was commended with the Medal of Honor with Purple ribbon by his Majesty Emperor of Japan in 2022."
   - name: Scott Atchley
     affiliation: Oak Ridge National Laboratory (ORNL)
-    role: Panelist
     photo: /assets/images/speakers/scott-atchley.jpg
     bio:
       - "Scott Atchley is a Distinguished R&D Staff Member and Chief Technology Officer with the Oak Ridge National Laboratory’s National Center for Computational Science. Scott focuses on understanding technology trends and application needs to guide future system procurements. Within the Oak Ridge Leadership Computing Facility (OLCF), Scott has contributed to the Titan, Summit, and Frontier projects. For Frontier, Scott served as the system architect. He reprises that role for OLCF’s upcoming sixth leadership system, Discovery. Scott also serves as the lead for the Quantum HPC Systems effort within DOE's Quantum Science Center."
   - name: Harun Bayraktar
     affiliation: NVIDIA Corporation (NVIDIA)
-    role: Panelist
     photo: /assets/images/speakers/harun-bayraktar.jpg
     bio:
       - "Harun received his PhD degree in Mechanical Engineering from UC Berkeley in 2003. His doctoral research made heavy use of supercomputers to solve problems in computational biomechanics. After graduating, he joined Dassault Systèmes Simulia Corp. where he developed high-performance parallel numerical methods for computational mechanics and fluid dynamics. In 2010, Harun joined the Albany Engineered Composites where he led the Research and Technology efforts on advanced aerospace composite materials using physics based numerical simulations. Harun joined NVIDIA in 2017, and he has been leading the Math Libraries organization that builds software to help accelerate applications in science, engineering, Quantum Computing, and AI."
   - name: Kasia Swirydowicz
     affiliation: Advanced Micro Devices, Inc. (AMD)
-    role: Panelist
     photo: /assets/images/speakers/kasia-swirydowicz.jpg
     # Role provided by the organizers; SC has no bio for her.
     bio:

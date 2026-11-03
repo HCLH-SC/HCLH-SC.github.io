@@ -8,29 +8,29 @@ Use this list when workshop details are finalized. Edit the referenced files and
 
 **File:** `_data/people.yml`
 
-**What to update:** Under `featured_speakers`, replace the empty list with one entry per speaker or panelist. Each entry can include:
+**What to update:** Add one entry per person under `invited_speakers` (invited talks) or `panelists` (panel). Each is shown as its own list on the page; an empty list is hidden. Each entry can include:
 
 | Field           | Required | Notes |
 |-----------------|----------|--------|
 | `name`          | Yes      | Full name |
 | `affiliation`   | Yes      | Institution or company |
 | `title`         | No       | Optional short line (talk title or position); shown after an em dash |
-| `role`          | No       | Label shown before the affiliation, e.g. `Invited speaker` or `Panelist` |
 | `photo`         | No       | Path to a square headshot, e.g. `/assets/images/speakers/jane-doe.jpg`; without one, an initials placeholder is shown |
 | `bio`           | No       | List of plain-text paragraphs; without one, no bio is shown |
 
 **Example:**
 
 ```yaml
-featured_speakers:
+invited_speakers:
   - name: Jane Doe
     affiliation: Example University
     title: Invited talk — Mixed precision at scale
+panelists:
   - name: John Smith
     affiliation: National Lab (NL)
 ```
 
-**Where it appears:** **Workshop Schedule** section → subsection *Invited speakers / panelists* (`_includes/home-sections.html` reads this list).
+**Where it appears:** the *Invited speakers / panelists* section, as an *Invited speakers* list followed by a *Panelists* list (`_includes/home-sections.html` and `_includes/speaker-cards.html` read these lists).
 
 **Optional (same section):** To adjust session titles or times in the table, edit **`_data/program.yml`** (`intro`, `schedule` rows).
 
