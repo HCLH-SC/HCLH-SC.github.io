@@ -178,8 +178,9 @@ article.workshop-home {
  * Subsections (###): must be smaller than ##.
  * Minima sets `.post-content h3` via @include relative-font-size (~1.375–1.625rem), which can beat
  * our scaled h2 — override with higher specificity + !important on font-size so it always wins.
+ * Speaker names (.speaker__name, also h3) are excluded and styled separately below.
  */
-article.workshop-home .post-content h3,
+article.workshop-home .post-content h3:not(.speaker__name),
 article.workshop-home .post-content .overview-layout__text h3 {
   font-size: clamp(1.05rem, 1.65vw, 1.125rem) !important;
   font-weight: 600 !important;
@@ -377,7 +378,7 @@ html {
   min-width: 0;
 }
 
-/* h4 on purpose: the site's `.post-content h3` rule adds a top margin that pushes the name below the photo. The negative margin lines up the letter tops with the photo's top edge. */
+/* Excluded from the site's `.post-content h3` rule above, whose top margin would push the name below the photo. The negative margin lines up the letter tops with the photo's top edge. */
 .workshop-home .speaker__name {
   margin: -0.25rem 0 0;
   font-size: 1.15rem;

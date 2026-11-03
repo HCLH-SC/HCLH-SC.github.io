@@ -8,7 +8,7 @@ Use this list when workshop details are finalized. Edit the referenced files and
 
 **File:** `_data/people.yml`
 
-**What to update:** Add one entry per person under `invited_speakers` (invited talks) or `panelists` (panel). Each is shown as its own list on the page; an empty list is hidden. Each entry can include:
+**What to update:** Add one entry per person under `invited_speakers` (invited talks) or `panelists` (panel). Each list has its own section on the page (*Invited speakers*, *Panelists*); an empty list shows "TBD". Each entry can include:
 
 | Field           | Required | Notes |
 |-----------------|----------|--------|
@@ -30,7 +30,7 @@ panelists:
     affiliation: National Lab (NL)
 ```
 
-**Where it appears:** the *Invited speakers / panelists* section, as an *Invited speakers* list followed by a *Panelists* list (`_includes/home-sections.html` and `_includes/speaker-cards.html` read these lists).
+**Where it appears:** the *Invited speakers* and *Panelists* sections, one after the other (`_includes/home-sections.html` and `_includes/speaker-cards.html` read these lists).
 
 **Optional (same section):** To adjust session titles or times in the table, edit **`_data/program.yml`** (`intro`, `schedule` rows).
 

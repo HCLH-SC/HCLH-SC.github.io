@@ -3,7 +3,7 @@
 <div class="speaker">
 {% if speaker.photo and speaker.photo != "" %}<img class="speaker__photo" src="{{ speaker.photo | relative_url }}" alt="Photo of {{ speaker.name | escape }}" width="120" height="120" loading="lazy" decoding="async">{% else %}<div class="speaker__photo speaker__photo--placeholder" aria-hidden="true">{{ speaker.name | split: " " | first | slice: 0 }}{{ speaker.name | split: " " | last | slice: 0 }}</div>{% endif %}
 <div class="speaker__text">
-<h4 class="speaker__name">{{ speaker.name | escape }}</h4>
+<h3 class="speaker__name">{{ speaker.name | escape }}</h3>
 <p class="speaker__meta">{{ speaker.affiliation | escape }}{% if speaker.title %} — {{ speaker.title | escape }}{% endif %}</p>
 {% for para in speaker.bio %}<p class="speaker__bio">{{ para | escape }}</p>
 {% endfor %}</div>

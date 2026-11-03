@@ -51,19 +51,17 @@
 </table>
 </div>
 
-## Invited speakers / panelists
 {% assign invited = site.data.people.invited_speakers %}{% assign panel = site.data.people.panelists %}
-{% if invited.size > 0 or panel.size > 0 %}
+## Invited speakers
 {% if invited.size > 0 %}
-### Invited speakers
-
 {% include speaker-cards.html speakers=invited %}
+{% else %}
+**TBD**
 {% endif %}
-{% if panel.size > 0 %}
-### Panelists
 
+## Panelists
+{% if panel.size > 0 %}
 {% include speaker-cards.html speakers=panel %}
-{% endif %}
 {% else %}
 **TBD** 
 {% endif %}
