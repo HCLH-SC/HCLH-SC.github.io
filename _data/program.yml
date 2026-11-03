@@ -1,15 +1,24 @@
-intro: The workshop will feature invited talks, peer-reviewed paper presentations, and a panel discussion. A tentative schedule can be found below.
+intro: The workshop will feature invited talks, peer-reviewed paper presentations, and a panel discussion. The finalized schedule can be found below.
 
+# Session names and times mirror the SC26 program (sess147), except for the
+# closing "Concluding Remarks" row, which SC does not list.
+#
 # Rows with `paper: N` are accepted-paper slots. They render as
-# "Accepted Paper N", and pick up the title/presenter from entry N of
-# `papers` in _data/accepted-papers.yml once those are filled in.
-# Every other row uses `session:` for its label.
+# "Accepted Paper N", and pick up the title/authors from entry N of
+# `papers` in _data/accepted-papers.yml.
+# Every other row uses `session:` for its label, plus an optional
+# `details:` list; each item is shown on its own line under the label.
+# Quote any text that contains a colon.
 schedule:
   - time: 14:00 – 14:05
-    session: Welcome and Introductory Remarks (Organizing Committee)
+    session: "High-Accuracy Computing on Low-Precision Hardware"
+    details:
+      - "Organizers: Reet Barik, Aditya Kashi, Piotr Luszczek, Paul Lin, Hao Lu, Balavignesh Vemparala Narayana Murthy"
     # 5 min
   - time: 14:05 – 14:30
-    session: Invited Talk I
+    session: "Invited Talk with Eric Nielsen, Senior Research Scientist with the Computational AeroSciences Branch at NASA Langley Research Center"
+    details:
+      - "Presenter: Eric Nielsen"
     # 25 min (20 min talk + 5 min Q/A)
   - time: 14:30 – 14:45
     paper: 1
@@ -18,10 +27,12 @@ schedule:
     paper: 2
     # 15 min (talk + Q/A + changeover)
   - time: 15:00 – 15:30
-    session: Break
+    session: Afternoon Break
     # 30 min
   - time: 15:30 – 15:55
-    session: Invited Talk II
+    session: "Invited Talk with Rob Schreiber, Distinguished Engineer at Cerebras Systems"
+    details:
+      - "Presenter: Rob Schreiber"
     # 25 min (20 min talk + 5 min Q/A)
   - time: 15:55 – 16:10
     paper: 3
@@ -33,7 +44,10 @@ schedule:
     paper: 5
     # 15 min (talk + Q/A + changeover)
   - time: 16:40 – 17:25
-    session: Panel Discussion
+    session: "Mixed Precision at Scale: From Peak FLOPs to Trusted Science"
+    details:
+      - "Moderator: Piotr Luszczek"
+      - "Panelists: Satoshi Matsuoka, Scott Atchley, Harun Bayraktar, Kasia Swirydowicz"
     # 45 min
   - time: 17:25 – 17:30
     session: Concluding Remarks

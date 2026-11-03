@@ -1,4 +1,5 @@
-# Accepted papers, in presentation order.
+# Accepted papers, in presentation order. Titles and authors mirror the
+# SC26 program (sess147).
 #
 # Position in this list is the paper number: the 1st entry fills the
 # `paper: 1` row of the schedule in _data/program.yml, the 2nd fills
@@ -6,17 +7,19 @@
 #
 # Leave `title` empty and the schedule row shows just "Accepted Paper N".
 # Fill it in and the row becomes "Accepted Paper N: <title>", with
-# `presenter` (optional) shown on a second line underneath.
+# `presenter` (optional) shown on a second line underneath. SC lists
+# "Author/Presenters" as one group, so `presenter` holds all of them.
 #
 # Titles and presenter names are plain text — no Markdown, no HTML.
+# Quote any text that contains a colon.
 papers:
-  - title: ""
-    presenter: ""
-  - title: ""
-    presenter: ""
-  - title: ""
-    presenter: ""
-  - title: ""
-    presenter: ""
-  - title: ""
-    presenter: ""
+  - title: "Mixed-Precision Cholesky Factorization for Semidefinite Programming Using Ozaki Scheme II"
+    presenter: "Haruki Nakamae, Toshio Endo, Katsuki Fujisawa"
+  - title: "No Bits Left Behind: A Precision-Preserving On-Wafer Reduction for FP64 GEMM"
+    presenter: "Varuni Katti Sastry, Venkat Vishwanath"
+  - title: "Error-Explicit Low-Precision Factorizations for Iterative Refinement"
+    presenter: "Joseph McLaughlin, Jee Choi"
+  - title: "Optimizing Semiconductor Device Simulations through Low-Precision Arithmetic"
+    presenter: "Alexander Maeder, Denghui Lu, Nicolas Vetsch, Vincent Maillou, Anders Winka, Jiang Cao, Mauro Dossena, Alexandros Nikolaos Ziogas, Mathieu Luisier"
+  - title: "DGEMM with Ozaki Scheme I/II on FP4 Tensor Cores: A Base-13 E2M1 Limb Representation"
+    presenter: "Shun-ichiro Hayashi, Daichi Mukunoki, Tetsuya Hoshino, Takahiro Katagiri"
