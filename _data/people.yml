@@ -52,7 +52,7 @@ program_committee:
 # bio (provided by the organizers); Eric Nielsen's photo and
 # bio (from his aiaa.org page; the bio is lightly trimmed); Harun Bayraktar's
 # bio (provided by the organizers); Toshiyuki Imamura's photo and bio (from his
-# R-CCS lab page, r-ccs.riken.jp).
+# SC26 presenter page, sc26.conference-program.com).
 # Optional fields: `title`, `photo`, `bio`.
 # `bio` is a list of paragraphs (plain text). Entries without a `photo` show an
 # initials placeholder; entries without a `bio` show no bio.
@@ -77,7 +77,7 @@ panelists:
     affiliation: RIKEN Center for Computational Science (R-CCS)
     photo: /assets/images/speakers/toshiyuki-imamura.jpg
     bio:
-      - "Toshiyuki Imamura is the Team Principal of the Large-scale Parallel Numerical Computing Technology Research Team at the RIKEN Center for Computational Science (R-CCS), which he has led since 2012, when it was part of AICS (renamed R-CCS in 2018). He graduated from the Graduate School of Engineering at Kyoto University in 1996, then worked as a researcher at the Japan Atomic Energy Research Institute, as a guest scientist at the High Performance Computing Center Stuttgart, and as an assistant professor at the University of Electro-Communications. His research covers parallel algorithms, high performance computing, numerical linear algebra, mixed-precision numerical computing, and minimal precision computing."
+      - "Toshiyuki Imamura is a team principal of the Large-scale Parallel Numerical Computing Technology Team at RIKEN R-CCS, and is responsible for developing numerical libraries and middleware on FugakuNEXT. He received his Diploma and Doctorate in Applied Systems and Sciences from Kyoto University in 1993 and 2000. He was a Researcher at CCSE, JAERI (1996-2003), a visiting scientist at HLRS (2002), and an associate professor at the University of Electro-Communications (2003-2012). His research interests include HPC, auto-tuning technology, and parallel eigenvalue computation. His research group won the HPL-MxP ranking (2020-2021) and was nominated as the Gordon Bell Prize finalist in SC05, SC06, and SC20."
   - name: Scott Atchley
     affiliation: Oak Ridge National Laboratory (ORNL)
     photo: /assets/images/speakers/scott-atchley.jpg
