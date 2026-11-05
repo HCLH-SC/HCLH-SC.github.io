@@ -48,8 +48,8 @@ program_committee:
     affiliation: Oak Ridge National Laboratory (ORNL)
 # Invited speakers and panelists are separate lists (`invited_speakers`,
 # `panelists`), each in schedule order. Photos and bios come from the SC26
-# program (sess147), except: Kasia Swirydowicz's photo (cropped from her page at
-# paranumal.com) and bio (provided by the organizers); Eric Nielsen's photo and
+# program (sess147), except: Kasia Swirydowicz's photo and
+# bio (provided by the organizers); Eric Nielsen's photo and
 # bio (from his aiaa.org page; the bio is lightly trimmed); Harun Bayraktar's
 # bio (provided by the organizers).
 # Optional fields: `title`, `photo`, `bio`.
@@ -92,6 +92,6 @@ panelists:
   - name: Kasia Swirydowicz
     affiliation: Advanced Micro Devices, Inc. (AMD)
     photo: /assets/images/speakers/kasia-swirydowicz.jpg
-    # Role provided by the organizers; SC has no bio for her.
+    # Bio provided by the organizers; SC has no bio for her.
     bio:
-      - "Kasia Swirydowicz is a Senior Member of Technical Staff (SMTS), Software Development Engineer, at Advanced Micro Devices (AMD)."
+      - "Katarzyna (Kasia) Świrydowicz is a Senior Member of Technical Staff (SMTS) in the HPC and AI Software Enablement group at AMD. She received her Ph.D. in mathematics from Virginia Tech (USA), followed by a postdoc position in NREL (now NLR) and staff scientist position in PNNL. Since 2012, her research has been focused on GPU-acceleration of sparse linear solvers, including Krylov subspace recycling, development of low-synchronization methods, library development, and mixed precision. In her current work, she focuses on GPU performance optimization, investigating missed performance opportunities and helping customers enable their numerical methods on AMD GPUs."
