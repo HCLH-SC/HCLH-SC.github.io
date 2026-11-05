@@ -51,7 +51,7 @@ schedule:
     session: "Mixed Precision at Scale: From Peak FLOPs to Trusted Science"
     details:
       - "Moderator: Piotr Luszczek"
-      - "Panelists: Satoshi Matsuoka, Scott Atchley, Harun Bayraktar, Kasia Swirydowicz"
+      - "Panelists: Toshiyuki Imamura, Scott Atchley, Harun Bayraktar, Kasia Swirydowicz"
     # 45 min
   - time: 5:25pm – 5:30pm
     session: Concluding Remarks

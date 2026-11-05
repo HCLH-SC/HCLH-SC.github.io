@@ -51,7 +51,8 @@ program_committee:
 # program (sess147), except: Kasia Swirydowicz's photo and
 # bio (provided by the organizers); Eric Nielsen's photo and
 # bio (from his aiaa.org page; the bio is lightly trimmed); Harun Bayraktar's
-# bio (provided by the organizers).
+# bio (provided by the organizers); Toshiyuki Imamura's photo and bio (from his
+# R-CCS lab page, r-ccs.riken.jp).
 # Optional fields: `title`, `photo`, `bio`.
 # `bio` is a list of paragraphs (plain text). Entries without a `photo` show an
 # initials placeholder; entries without a `bio` show no bio.
@@ -72,12 +73,11 @@ invited_speakers:
       - "Schreiber earned his Ph.D. from Yale University in 1977 and later held faculty positions at Stanford University and Rensselaer Polytechnic Institute. Transitioning to industry, he served as Chief Scientist at Saxpy Computer, Assistant Director of the Exascale Computing Lab at Hewlett Packard Labs, and currently operates as a Software Architect at Cerebras Systems."
       - "A pioneer in parallel environments, Schreiber co-developed High Performance Fortran, co-authored the NAS Parallel Benchmarks, and was a key contributor to the sparse-matrix extension of MATLAB. His extensive honors include being named a SIAM Fellow in 2010 and an ACM Fellow in 2012 for his exceptional contributions to languages, compilers, and architectures for parallel scientific computing."
 panelists:
-  - name: Satoshi Matsuoka
-    affiliation: RIKEN and Tokyo Institute of Technology
-    photo: /assets/images/speakers/satoshi-matsuoka.jpg
+  - name: Toshiyuki Imamura
+    affiliation: RIKEN Center for Computational Science (R-CCS)
+    photo: /assets/images/speakers/toshiyuki-imamura.jpg
     bio:
-      - "Satoshi Matsuoka has been the director of RIKEN Center for Computational Science (R-CCS) since 2018. He is responsible for developing the supercomputer Fugaku which has become the fastest supercomputer in the world in all four major supercomputer rankings in 2020 and 2021 (Top500, HPCG, HPL-AI, Graph500), along with multitudes of ongoing cutting edge HPC research being conducted, including investigating post-Moore era computing, especially the future Fugaku NEXT supercomputer."
-      - "He received many international acclaims, at the Tokyo Institute of Technology, where he still holds a professor position, to continue his research activities in HPC as well as scalable Big Data and AI. His longtime contribution for the computer science research was commended with the Medal of Honor with Purple ribbon by his Majesty Emperor of Japan in 2022."
+      - "Toshiyuki Imamura is the Team Principal of the Large-scale Parallel Numerical Computing Technology Research Team at the RIKEN Center for Computational Science (R-CCS), which he has led since 2012, when it was part of AICS (renamed R-CCS in 2018). He graduated from the Graduate School of Engineering at Kyoto University in 1996, then worked as a researcher at the Japan Atomic Energy Research Institute, as a guest scientist at the High Performance Computing Center Stuttgart, and as an assistant professor at the University of Electro-Communications. His research covers parallel algorithms, high performance computing, numerical linear algebra, mixed-precision numerical computing, and minimal precision computing."
   - name: Scott Atchley
     affiliation: Oak Ridge National Laboratory (ORNL)
     photo: /assets/images/speakers/scott-atchley.jpg
