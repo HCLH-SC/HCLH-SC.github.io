@@ -53,9 +53,10 @@ program_committee:
 # bio (from his aiaa.org page; the bio is lightly trimmed); Harun Bayraktar's
 # bio (provided by the organizers); Toshiyuki Imamura's photo and bio (from his
 # SC26 presenter page, sc26.conference-program.com).
-# Optional fields: `title`, `photo`, `bio`.
+# Optional fields: `title`, `photo`, `bio`, `tbd`.
 # `bio` is a list of paragraphs (plain text). Entries without a `photo` show an
-# initials placeholder; entries without a `bio` show no bio.
+# initials placeholder; entries without a `bio` show no bio. `tbd: true` shows
+# a dashed "TBD" box in place of the photo.
 invited_speakers:
   - name: Eric Nielsen
     affiliation: NASA Langley Research Center
@@ -65,13 +66,11 @@ invited_speakers:
     bio:
       - "Eric Nielsen is a Senior Research Scientist with the Computational AeroSciences Branch at NASA Langley Research Center in Hampton, Virginia."
       - "He received his PhD in Aerospace Engineering from Virginia Tech. Dr. Nielsen specializes in the development of computational aerodynamics software for the world’s most powerful computer systems. The software has been distributed to thousands of organizations around the country and supports major national research and engineering efforts at NASA, in industry, academia, the Department of Defense, and other government agencies. He has published extensively on the subject and has given presentations around the world on his work. Dr. Nielsen is a recipient of NASA’s Exceptional Achievement and Exceptional Engineering Achievement Medals as well as NASA Langley’s HJE Reid Award for best research publication."
-  - name: Rob Schreiber
-    affiliation: Cerebras Systems
-    photo: /assets/images/speakers/rob-schreiber.jpg
-    bio:
-      - "Rob Schreiber is a distinguished American computer scientist renowned for his foundational research in parallel computing, sequential and parallel algorithms for matrix computation, and compiler optimization."
-      - "Schreiber earned his Ph.D. from Yale University in 1977 and later held faculty positions at Stanford University and Rensselaer Polytechnic Institute. Transitioning to industry, he served as Chief Scientist at Saxpy Computer, Assistant Director of the Exascale Computing Lab at Hewlett Packard Labs, and currently operates as a Software Architect at Cerebras Systems."
-      - "A pioneer in parallel environments, Schreiber co-developed High Performance Fortran, co-authored the NAS Parallel Benchmarks, and was a key contributor to the sparse-matrix extension of MATLAB. His extensive honors include being named a SIAM Fellow in 2010 and an ACM Fellow in 2012 for his exceptional contributions to languages, compilers, and architectures for parallel scientific computing."
+  # Placeholder for the 3:30pm invited talk. Replace this entry with the
+  # speaker's name, affiliation, photo and bio once announced.
+  - name: Speaker to be announced
+    tbd: true
+    affiliation: "Invited talk, 3:30pm – 3:55pm. Name and bio to follow."
 panelists:
   - name: Toshiyuki Imamura
     affiliation: RIKEN Center for Computational Science (R-CCS)

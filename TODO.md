@@ -28,6 +28,7 @@ Live site: https://hclh-sc.github.io/ (status as of 2026-11-03). Edit the refere
 | `title`         | No       | Optional short line (talk title or position); shown after an em dash |
 | `photo`         | No       | Path to a square headshot (200×200 works well), e.g. `/assets/images/speakers/jane-doe.jpg`; without one, an initials placeholder is shown |
 | `bio`           | No       | List of plain-text paragraphs; without one, no bio is shown |
+| `tbd`           | No       | `true` marks a placeholder for a speaker not yet announced: a dashed "TBD" box replaces the photo. Remove it when filling in the real person |
 
 **Example:**
 

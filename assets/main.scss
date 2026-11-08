@@ -399,6 +399,18 @@ html {
   margin-bottom: 0;
 }
 
+/* Speaker not yet announced (`tbd: true` in _data/people.yml) */
+.workshop-home .speaker--tbd .speaker__photo--placeholder {
+  border: 2px dashed #666;
+  background: transparent;
+  font-size: 1.5rem;
+  letter-spacing: 0.12em;
+}
+
+.workshop-home .speaker--tbd .speaker__name {
+  margin-top: 0;
+}
+
 @media screen and (max-width: 500px) {
   .workshop-home .speaker {
     flex-direction: column;

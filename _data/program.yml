@@ -34,9 +34,7 @@ schedule:
     session: Afternoon Break
     # 30 min
   - time: 3:30pm – 3:55pm
-    session: "Invited Talk with Rob Schreiber, Distinguished Engineer at Cerebras Systems"
-    details:
-      - "Presenter: Rob Schreiber"
+    session: "Invited Talk (speaker TBD)"
     # 25 min (20 min talk + 5 min Q/A)
   - time: 3:55pm – 4:10pm
     paper: 3
