@@ -61,16 +61,16 @@ invited_speakers:
   - name: Eric Nielsen
     affiliation: NASA Langley Research Center
     photo: /assets/images/speakers/eric-nielsen.jpg
-    # Bio from aiaa.org/people/eric-nielsen (written 2019). The outdated clause
-    # "and has worked at Langley for the past 25 years" is removed.
+    title: Towards Mixed-Precision Algorithms to Accelerate Large-Scale Aerospace Simulations
+    # Bio provided by the speaker.
     bio:
-      - "Eric Nielsen is a Senior Research Scientist with the Computational AeroSciences Branch at NASA Langley Research Center in Hampton, Virginia."
-      - "He received his PhD in Aerospace Engineering from Virginia Tech. Dr. Nielsen specializes in the development of computational aerodynamics software for the world’s most powerful computer systems. The software has been distributed to thousands of organizations around the country and supports major national research and engineering efforts at NASA, in industry, academia, the Department of Defense, and other government agencies. He has published extensively on the subject and has given presentations around the world on his work. Dr. Nielsen is a recipient of NASA’s Exceptional Achievement and Exceptional Engineering Achievement Medals as well as NASA Langley’s HJE Reid Award for best research publication."
-  # Placeholder for the 3:30pm invited talk. Replace this entry with the
-  # speaker's name, affiliation, photo and bio once announced.
-  - name: Speaker to be announced
-    tbd: true
-    affiliation: "Invited talk, 3:30pm – 3:55pm. Name and bio to follow."
+      - "Eric Nielsen is a Senior Research Scientist in the Computational AeroSciences Branch at NASA Langley Research Center in Hampton, Virginia. He received his PhD in Aerospace Engineering from Virginia Tech and has worked at Langley for the past 30 years. Dr. Nielsen leads a development team specializing in computational aerodynamics software for the world’s most powerful computer systems. The software has been distributed to thousands of organizations around the country and supports major national research and engineering efforts at NASA, in industry, academia, the Department of War, and other government agencies. He has served as the Principal Investigator on Agency-level projects at NASA as well as leadership-class computational efforts sponsored by the Department of Energy. Dr. Nielsen was recently inducted into the Virginia Tech Academy of Aerospace and Ocean Engineering Excellence. Eric is a happily married father of two wonderful children and has been a devoted servant at Bethel Baptist Church in Yorktown, Virginia since 1987."
+  - name: Pradeep Dubey
+    affiliation: Intel Corporation
+    photo: /assets/images/speakers/pradeep-dubey.jpg
+    title: Pushing the limits of ultra-low-precision for LLM Inferencing
+    bio:
+      - "Pradeep K. Dubey is an Intel Senior Distinguished Engineer and director of the Parallel Computing Lab at Intel Corporation, where he leads a team of leading researchers focused on cutting-edge work in parallel computing. Under his leadership, the team defines computer architectures that efficiently manage emerging machine learning and AI workloads, traditional high-performance computing (HPC) applications in data-centric environments and seek out opportunities to differentiate Intel’s CPU and GPU platforms. Before joining Intel, Dubey worked at IBM’s T.J. Watson Research Center. He has made major contributions to the design, architecture, and performance of several microprocessors, including the IBM Power PC, Intel386™, Intel486™, Intel® Pentium®, and Intel Xeon® processors. Holding over 30 patents and authoring over 100 peer-reviewed technical papers, Dubey earned his Ph.D. in electrical engineering from Purdue University, which also recognized him with the Outstanding Electrical and Computer Engineer Award. He is both an IEEE Fellow and an ACM Fellow."
 panelists:
   - name: Toshiyuki Imamura
     affiliation: RIKEN Center for Computational Science (R-CCS)

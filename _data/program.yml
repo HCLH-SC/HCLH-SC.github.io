@@ -20,9 +20,9 @@ schedule:
       - "Organizers: Reet Barik, Aditya Kashi, Piotr Luszczek, Paul Lin, Hao Lu, Balavignesh Vemparala Narayana Murthy"
     # 5 min
   - time: 2:05pm – 2:30pm
-    session: "Invited Talk with Eric Nielsen, Senior Research Scientist with the Computational AeroSciences Branch at NASA Langley Research Center"
+    session: "Invited Talk: Towards Mixed-Precision Algorithms to Accelerate Large-Scale Aerospace Simulations"
     details:
-      - "Presenter: Eric Nielsen"
+      - "Presenter: Eric Nielsen, NASA Langley Research Center"
     # 25 min (20 min talk + 5 min Q/A)
   - time: 2:30pm – 2:45pm
     paper: 1
@@ -34,7 +34,9 @@ schedule:
     session: Afternoon Break
     # 30 min
   - time: 3:30pm – 3:55pm
-    session: "Invited Talk (speaker TBD)"
+    session: "Invited Talk: Pushing the limits of ultra-low-precision for LLM Inferencing"
+    details:
+      - "Presenter: Pradeep Dubey, Intel Corporation"
     # 25 min (20 min talk + 5 min Q/A)
   - time: 3:55pm – 4:10pm
     paper: 3

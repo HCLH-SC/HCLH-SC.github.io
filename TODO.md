@@ -25,7 +25,7 @@ Live site: https://hclh-sc.github.io/ (status as of 2026-11-03). Edit the refere
 |-----------------|----------|--------|
 | `name`          | Yes      | Full name |
 | `affiliation`   | Yes      | Institution or company |
-| `title`         | No       | Optional short line (talk title or position); shown after an em dash |
+| `title`         | No       | Optional talk title; shown on its own "Talk:" line between the affiliation and the bio |
 | `photo`         | No       | Path to a square headshot (200×200 works well), e.g. `/assets/images/speakers/jane-doe.jpg`; without one, an initials placeholder is shown |
 | `bio`           | No       | List of plain-text paragraphs; without one, no bio is shown |
 | `tbd`           | No       | `true` marks a placeholder for a speaker not yet announced: a dashed "TBD" box replaces the photo. Remove it when filling in the real person |
@@ -36,7 +36,7 @@ Live site: https://hclh-sc.github.io/ (status as of 2026-11-03). Edit the refere
 invited_speakers:
   - name: Jane Doe
     affiliation: Example University
-    title: Invited talk — Mixed precision at scale
+    title: Mixed precision at scale
 panelists:
   - name: John Smith
     affiliation: National Lab (NL)
